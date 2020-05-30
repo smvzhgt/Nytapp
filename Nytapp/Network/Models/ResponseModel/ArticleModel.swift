@@ -1,5 +1,5 @@
 //
-//  MostEmailedModel.swift
+//  ArticleModel.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -9,13 +9,13 @@
 import Foundation
 
 
-final class MostEmailedArticleResponseModel: Codable {
+final class ArticleResponseModel: Codable {
     var status: String
     var copyright: String
     var num_results: Int
-    var results: [MostEmailedArticleModel]
+    var results: [ArticleModel]
     
-    init(status: String, copyright: String, num_results: Int, results: [MostEmailedArticleModel]) {
+    init(status: String, copyright: String, num_results: Int, results: [ArticleModel]) {
         self.status = status
         self.copyright = copyright
         self.num_results = num_results
@@ -24,7 +24,7 @@ final class MostEmailedArticleResponseModel: Codable {
 }
 
 
-final class MostEmailedArticleModel: Codable {
+final class ArticleModel: Codable {
     var id: Int
     var url: String
     var title: String

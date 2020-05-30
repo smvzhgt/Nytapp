@@ -9,9 +9,9 @@
 import Foundation
 
 protocol ArticleServiceProtocol {
-    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void)
-    func fetchMostSharedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void)
-    func fetchMostViewedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void)
+    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void)
+    func fetchMostSharedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void)
+    func fetchMostViewedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void)
 }
 
 final class ArticleService {
@@ -30,9 +30,10 @@ final class ArticleService {
 
 // MARK: - Extension
 extension ArticleService: ArticleServiceProtocol {
-    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void) {
-        let request = MostEmailedArticleRequest(days: days).getDataRequest()
-        executor.executeObject(dataRequest: request, entity: MostEmailedArticleResponseModel.self) { (model, error) in
+    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void) {
+        let url = MostEmailedArticleUrl(days: days).build()
+        let request = ArticlesRequest(url: url).getDataRequest()
+        executor.executeObject(dataRequest: request, entity: ArticleResponseModel.self) { (model, error) in
             switch (model, error) {
             case let (.some(model), .none):
                 completion(.success(model.results))
@@ -44,9 +45,10 @@ extension ArticleService: ArticleServiceProtocol {
         }
     }
     
-    func fetchMostSharedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void) {
-        let request = MostSharedArticleRequest(days: days).getDataRequest()
-        executor.executeObject(dataRequest: request, entity: MostEmailedArticleResponseModel.self) { (model, error) in
+    func fetchMostSharedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void) {
+        let url = MostSharedArticleUrl(days: days).build()
+        let request = ArticlesRequest(url: url).getDataRequest()
+        executor.executeObject(dataRequest: request, entity: ArticleResponseModel.self) { (model, error) in
             switch (model, error) {
             case let (.some(model), .none):
                 completion(.success(model.results))
@@ -58,9 +60,10 @@ extension ArticleService: ArticleServiceProtocol {
         }
     }
     
-    func fetchMostViewedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void) {
-        let request = MostViewedArticlesRequest(days: days).getDataRequest()
-        executor.executeObject(dataRequest: request, entity: MostEmailedArticleResponseModel.self) { (model, error) in
+    func fetchMostViewedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void) {
+        let url = MostViewedArticleUrl(days: days).build()
+        let request = ArticlesRequest(url: url).getDataRequest()
+        executor.executeObject(dataRequest: request, entity: ArticleResponseModel.self) { (model, error) in
             switch (model, error) {
             case let (.some(model), .none):
                 completion(.success(model.results))

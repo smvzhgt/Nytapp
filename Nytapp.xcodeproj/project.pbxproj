@@ -27,11 +27,16 @@
 		0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6731D24825EE000D153F6 /* Endpoint.swift */; };
 		0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */; };
 		0CD673232482604100D153F6 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673222482604100D153F6 /* NetworkUtil.swift */; };
-		0CD673272482621900D153F6 /* MostEmailedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673262482621900D153F6 /* MostEmailedModel.swift */; };
+		0CD673272482621900D153F6 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673262482621900D153F6 /* ArticleModel.swift */; };
 		0CD6732B2482719800D153F6 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6732A2482719800D153F6 /* CommonError.swift */; };
 		0CD673332482851800D153F6 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673322482851800D153F6 /* ArticleService.swift */; };
 		0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673342482874F00D153F6 /* MostSharedArticleRequest.swift */; };
 		0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673362482888800D153F6 /* MostViewedArticlesRequest.swift */; };
+		0CD6733A248289E400D153F6 /* MostEmailedArticleUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD67339248289E400D153F6 /* MostEmailedArticleUrl.swift */; };
+		0CD6733C24828A3E00D153F6 /* UrlBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6733B24828A3E00D153F6 /* UrlBuilderProtocol.swift */; };
+		0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6733D24828A8A00D153F6 /* MostSharedArticleUrl.swift */; };
+		0CD6734024828AC100D153F6 /* MostViewedArticleUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6733F24828AC100D153F6 /* MostViewedArticleUrl.swift */; };
+		0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6734124828B7000D153F6 /* ArticleRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +61,16 @@
 		0CD6731D24825EE000D153F6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedRequest.swift; sourceTree = "<group>"; };
 		0CD673222482604100D153F6 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
-		0CD673262482621900D153F6 /* MostEmailedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedModel.swift; sourceTree = "<group>"; };
+		0CD673262482621900D153F6 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		0CD6732A2482719800D153F6 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		0CD673322482851800D153F6 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		0CD673342482874F00D153F6 /* MostSharedArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedArticleRequest.swift; sourceTree = "<group>"; };
 		0CD673362482888800D153F6 /* MostViewedArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedArticlesRequest.swift; sourceTree = "<group>"; };
+		0CD67339248289E400D153F6 /* MostEmailedArticleUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedArticleUrl.swift; sourceTree = "<group>"; };
+		0CD6733B24828A3E00D153F6 /* UrlBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilderProtocol.swift; sourceTree = "<group>"; };
+		0CD6733D24828A8A00D153F6 /* MostSharedArticleUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedArticleUrl.swift; sourceTree = "<group>"; };
+		0CD6733F24828AC100D153F6 /* MostViewedArticleUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedArticleUrl.swift; sourceTree = "<group>"; };
+		0CD6734124828B7000D153F6 /* ArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,12 +225,14 @@
 		0CD6731824825D5C00D153F6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0CD67324248261E600D153F6 /* Models */,
 				0CD6731F24825EFC00D153F6 /* DataRequest */,
+				0CD67338248289B700D153F6 /* Urls */,
+				0CD67324248261E600D153F6 /* Models */,
 				0CD6731924825D7300D153F6 /* RequestExecutor.swift */,
 				0CD6731B24825EC100D153F6 /* RequestProtocol.swift */,
 				0CD6731D24825EE000D153F6 /* Endpoint.swift */,
 				0CD673222482604100D153F6 /* NetworkUtil.swift */,
+				0CD6733B24828A3E00D153F6 /* UrlBuilderProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 				0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */,
 				0CD673342482874F00D153F6 /* MostSharedArticleRequest.swift */,
 				0CD673362482888800D153F6 /* MostViewedArticlesRequest.swift */,
+				0CD6734124828B7000D153F6 /* ArticleRequest.swift */,
 			);
 			path = DataRequest;
 			sourceTree = "<group>";
@@ -246,9 +259,19 @@
 		0CD67325248261F500D153F6 /* ResponseModel */ = {
 			isa = PBXGroup;
 			children = (
-				0CD673262482621900D153F6 /* MostEmailedModel.swift */,
+				0CD673262482621900D153F6 /* ArticleModel.swift */,
 			);
 			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		0CD67338248289B700D153F6 /* Urls */ = {
+			isa = PBXGroup;
+			children = (
+				0CD67339248289E400D153F6 /* MostEmailedArticleUrl.swift */,
+				0CD6733D24828A8A00D153F6 /* MostSharedArticleUrl.swift */,
+				0CD6733F24828AC100D153F6 /* MostViewedArticleUrl.swift */,
+			);
+			path = Urls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD6734024828AC100D153F6 /* MostViewedArticleUrl.swift in Sources */,
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
 				0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */,
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
@@ -340,15 +364,19 @@
 				0CD673332482851800D153F6 /* ArticleService.swift in Sources */,
 				0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */,
 				0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */,
+				0CD6733C24828A3E00D153F6 /* UrlBuilderProtocol.swift in Sources */,
 				0CD673092482501000D153F6 /* StartPresenter.swift in Sources */,
 				0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */,
+				0CD6733A248289E400D153F6 /* MostEmailedArticleUrl.swift in Sources */,
 				0CB0CF7224824500008D61E6 /* AppDelegate.swift in Sources */,
 				0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */,
 				0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */,
-				0CD673272482621900D153F6 /* MostEmailedModel.swift in Sources */,
+				0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */,
+				0CD673272482621900D153F6 /* ArticleModel.swift in Sources */,
 				0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */,
 				0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
+				0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

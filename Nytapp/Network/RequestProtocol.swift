@@ -9,7 +9,6 @@
 import Alamofire
 
 protocol RequestProtocol {
-    var url: String { get }
     var method: HTTPMethod { get }
     var parameters: Parameters? { get }
     var headers: HTTPHeaders? { get }
