@@ -13,6 +13,14 @@
 		0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB0CF7724824500008D61E6 /* Main.storyboard */; };
 		0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB0CF7A24824502008D61E6 /* Assets.xcassets */; };
 		0CB0CF7E24824502008D61E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB0CF7C24824502008D61E6 /* LaunchScreen.storyboard */; };
+		0CD673092482501000D153F6 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD672FF2482501000D153F6 /* StartPresenter.swift */; };
+		0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673002482501000D153F6 /* StartFlow.swift */; };
+		0CD6730B2482501000D153F6 /* StartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673022482501000D153F6 /* StartInteractor.swift */; };
+		0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673032482501000D153F6 /* StartProtocols.swift */; };
+		0CD6730D2482501000D153F6 /* StartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673052482501000D153F6 /* StartBuilder.swift */; };
+		0CD6730E2482501000D153F6 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673072482501000D153F6 /* Start.storyboard */; };
+		0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673082482501000D153F6 /* StartViewController.swift */; };
+		0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		0CB0CF7A24824502008D61E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB0CF7D24824502008D61E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CB0CF7F24824502008D61E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD672FF2482501000D153F6 /* StartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		0CD673002482501000D153F6 /* StartFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartFlow.swift; sourceTree = "<group>"; };
+		0CD673022482501000D153F6 /* StartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInteractor.swift; sourceTree = "<group>"; };
+		0CD673032482501000D153F6 /* StartProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartProtocols.swift; sourceTree = "<group>"; };
+		0CD673052482501000D153F6 /* StartBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartBuilder.swift; sourceTree = "<group>"; };
+		0CD673072482501000D153F6 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		0CD673082482501000D153F6 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,119 @@
 		0CB0CF7024824500008D61E6 /* Nytapp */ = {
 			isa = PBXGroup;
 			children = (
-				0CB0CF7124824500008D61E6 /* AppDelegate.swift */,
-				0CB0CF7324824500008D61E6 /* SceneDelegate.swift */,
-				0CB0CF7524824500008D61E6 /* ViewController.swift */,
+				0CD672FC24824EF700D153F6 /* Storage */,
+				0CD672FB24824EC900D153F6 /* Scenes */,
+				0CD672FA24824EB900D153F6 /* Common */,
+				0CD672F924824EB000D153F6 /* Extensions */,
+				0CD672F824824EA500D153F6 /* Services */,
+				0CD672F724824E7200D153F6 /* Resources */,
+				0CD672F524824E5A00D153F6 /* Application */,
 				0CB0CF7724824500008D61E6 /* Main.storyboard */,
-				0CB0CF7A24824502008D61E6 /* Assets.xcassets */,
-				0CB0CF7C24824502008D61E6 /* LaunchScreen.storyboard */,
-				0CB0CF7F24824502008D61E6 /* Info.plist */,
+				0CB0CF7524824500008D61E6 /* ViewController.swift */,
 			);
 			path = Nytapp;
+			sourceTree = "<group>";
+		};
+		0CD672F524824E5A00D153F6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0CB0CF7F24824502008D61E6 /* Info.plist */,
+				0CB0CF7324824500008D61E6 /* SceneDelegate.swift */,
+				0CB0CF7124824500008D61E6 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		0CD672F724824E7200D153F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CB0CF7A24824502008D61E6 /* Assets.xcassets */,
+				0CB0CF7C24824502008D61E6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CD672F824824EA500D153F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0CD672F924824EB000D153F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CD672FA24824EB900D153F6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0CD672FB24824EC900D153F6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0CD672FD24824F8D00D153F6 /* Start */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0CD672FC24824EF700D153F6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0CD672FD24824F8D00D153F6 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673002482501000D153F6 /* StartFlow.swift */,
+				0CD673032482501000D153F6 /* StartProtocols.swift */,
+				0CD673042482501000D153F6 /* Builder */,
+				0CD673012482501000D153F6 /* Business Logic */,
+				0CD672FE2482501000D153F6 /* Presentation Logic */,
+				0CD673062482501000D153F6 /* View */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		0CD672FE2482501000D153F6 /* Presentation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD672FF2482501000D153F6 /* StartPresenter.swift */,
+			);
+			path = "Presentation Logic";
+			sourceTree = "<group>";
+		};
+		0CD673012482501000D153F6 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673022482501000D153F6 /* StartInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		0CD673042482501000D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673052482501000D153F6 /* StartBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0CD673062482501000D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673072482501000D153F6 /* Start.storyboard */,
+				0CD673082482501000D153F6 /* StartViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB0CF7E24824502008D61E6 /* LaunchScreen.storyboard in Resources */,
+				0CD6730E2482501000D153F6 /* Start.storyboard in Resources */,
 				0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */,
 				0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */,
 			);
@@ -139,7 +260,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
+				0CD6730B2482501000D153F6 /* StartInteractor.swift in Sources */,
+				0CD6730D2482501000D153F6 /* StartBuilder.swift in Sources */,
+				0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */,
+				0CD673092482501000D153F6 /* StartPresenter.swift in Sources */,
 				0CB0CF7224824500008D61E6 /* AppDelegate.swift in Sources */,
+				0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */,
+				0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */,
+				0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
