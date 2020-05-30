@@ -52,6 +52,9 @@
 		0CD6738D2482956300D153F6 /* ViewedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673762482956300D153F6 /* ViewedFlow.swift */; };
 		0CD6738E2482956300D153F6 /* ViewedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673782482956300D153F6 /* ViewedInteractor.swift */; };
 		0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6737A2482956300D153F6 /* ViewedBuilder.swift */; };
+		0CD6739124829D9D00D153F6 /* EmailedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */; };
+		0CD673952482A35A00D153F6 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673932482A35A00D153F6 /* ArticleCell.xib */; };
+		0CD673962482A35A00D153F6 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673942482A35A00D153F6 /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +104,9 @@
 		0CD673762482956300D153F6 /* ViewedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedFlow.swift; sourceTree = "<group>"; };
 		0CD673782482956300D153F6 /* ViewedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedInteractor.swift; sourceTree = "<group>"; };
 		0CD6737A2482956300D153F6 /* ViewedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedBuilder.swift; sourceTree = "<group>"; };
+		0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedTableViewDelegate.swift; sourceTree = "<group>"; };
+		0CD673932482A35A00D153F6 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		0CD673942482A35A00D153F6 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,8 +307,10 @@
 		0CD6735B2482956300D153F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0CD673922482A31900D153F6 /* Cell */,
 				0CD6735C2482956300D153F6 /* Emailed.storyboard */,
 				0CD6735D2482956300D153F6 /* EmailedViewController.swift */,
+				0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,6 +423,15 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		0CD673922482A31900D153F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673942482A35A00D153F6 /* ArticleCell.swift */,
+				0CD673932482A35A00D153F6 /* ArticleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +500,7 @@
 				0CD6737D2482956300D153F6 /* Emailed.storyboard in Resources */,
 				0CD6738C2482956300D153F6 /* Viewed.storyboard in Resources */,
 				0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */,
+				0CD673952482A35A00D153F6 /* ArticleCell.xib in Resources */,
 				0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */,
 				0CD673852482956300D153F6 /* Shared.storyboard in Resources */,
 			);
@@ -503,6 +521,7 @@
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
 				0CD6737B2482956300D153F6 /* EmailedPresenter.swift in Sources */,
 				0CD6738A2482956300D153F6 /* ViewedPresenter.swift in Sources */,
+				0CD673962482A35A00D153F6 /* ArticleCell.swift in Sources */,
 				0CD673832482956300D153F6 /* SharedFlow.swift in Sources */,
 				0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */,
 				0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */,
@@ -527,6 +546,7 @@
 				0CD673272482621900D153F6 /* ArticleModel.swift in Sources */,
 				0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */,
 				0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */,
+				0CD6739124829D9D00D153F6 /* EmailedTableViewDelegate.swift in Sources */,
 				0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
 				0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */,

@@ -60,7 +60,7 @@ final class MediaModel: Codable {
 }
 
 
-class MediaMetadataModel: Codable {
+final class MediaMetadataModel: Codable {
     var url: String
     var format: String
     var height: Int
@@ -71,5 +71,24 @@ class MediaMetadataModel: Codable {
         self.format = format
         self.height = height
         self.width = width
+    }
+}
+
+
+
+struct ArticlePresentationModel {
+    var url: String
+    var title: String
+    var abstract: String
+    var imageUrl: String?
+}
+
+
+extension ArticlePresentationModel {
+    init(model: ArticleModel) {
+        self.url = model.url
+        self.title = model.title
+        self.abstract = model.abstract
+        self.imageUrl = model.media.first?.mediaMetadata.filter({ $0.format == "mediumThreeByTwo210" }).first?.url
     }
 }

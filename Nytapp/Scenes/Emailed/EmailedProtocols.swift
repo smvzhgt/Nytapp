@@ -10,16 +10,22 @@ import Foundation
 
 // MARK: - Business Logic Protocol
 protocol EmailedInteractorProtocol: class {
-
+    func fetchArticles(request: Emailed.Fetch.Request)
 }
 
 // MARK: - Presentation Protocol
 protocol EmailedPresenterProtocol: class {
-
+    func presentFetchArticles(response: Emailed.Fetch.Response)
 }
 
 
 // MARK: - View Protocol
 protocol EmailedViewProtocol: class {
+    func displayFetchArticles(viewModel: Emailed.Fetch.ViewModel)
+}
+
+
+// MARK: - TableViewProtocol
+protocol EmailedInteractionProtocol: class {
 
 }

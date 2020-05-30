@@ -10,5 +10,21 @@ import Foundation
 
 enum Emailed {
     
+    enum Fetch {
+        
+        struct Request {
+            var days: Int
+        }
+        
+        struct Response {
+            let result: Result<[ArticleModel], CommonError>
+        }
+        
+        struct ViewModel {
+            let models: [ArticlePresentationModel]
+            let error: CommonError?
+        }
 
+    }
+    
 }

@@ -15,11 +15,13 @@ final class EmailedInteractor: NSObject {
     
     
     // MARK: - Private Properties
+    private var service: ArticleServiceProtocol
     
     
     // MARK: - Initializers
-    init(presenter: EmailedPresenterProtocol) {
+    init(presenter: EmailedPresenterProtocol, service: ArticleServiceProtocol = ArticleService()) {
         self.presenter = presenter
+        self.service = service
 
         super.init()
     }
@@ -28,4 +30,13 @@ final class EmailedInteractor: NSObject {
 
 
 // MARK: - Extension
-extension EmailedInteractor: EmailedInteractorProtocol {}
+extension EmailedInteractor: EmailedInteractorProtocol {
+    func fetchArticles(request: Emailed.Fetch.Request) {
+        service.fetchMostEmailedArticle(days: request.days) { [weak self] (result: Result<[ArticleModel], CommonError>) in
+            guard let `self` = self else { return }
+            let response = Emailed.Fetch.Response(result: result)
+            self.presenter.presentFetchArticles(response: response)
+        }
+    }
+    
+}
