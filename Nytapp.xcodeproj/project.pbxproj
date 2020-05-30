@@ -30,6 +30,8 @@
 		0CD673272482621900D153F6 /* MostEmailedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673262482621900D153F6 /* MostEmailedModel.swift */; };
 		0CD6732B2482719800D153F6 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6732A2482719800D153F6 /* CommonError.swift */; };
 		0CD673332482851800D153F6 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673322482851800D153F6 /* ArticleService.swift */; };
+		0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673342482874F00D153F6 /* MostSharedArticleRequest.swift */; };
+		0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673362482888800D153F6 /* MostViewedArticlesRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		0CD673262482621900D153F6 /* MostEmailedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedModel.swift; sourceTree = "<group>"; };
 		0CD6732A2482719800D153F6 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		0CD673322482851800D153F6 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		0CD673342482874F00D153F6 /* MostSharedArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedArticleRequest.swift; sourceTree = "<group>"; };
+		0CD673362482888800D153F6 /* MostViewedArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedArticlesRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */,
+				0CD673342482874F00D153F6 /* MostSharedArticleRequest.swift */,
+				0CD673362482888800D153F6 /* MostViewedArticlesRequest.swift */,
 			);
 			path = DataRequest;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
+				0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */,
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
 				0CD6730B2482501000D153F6 /* StartInteractor.swift in Sources */,
 				0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */,
@@ -339,6 +346,7 @@
 				0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */,
 				0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */,
 				0CD673272482621900D153F6 /* MostEmailedModel.swift in Sources */,
+				0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */,
 				0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
 			);

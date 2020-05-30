@@ -1,5 +1,5 @@
 //
-//  MostEmailedArticleRequest.swift
+//  MostViewedArticlesRequest.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -8,7 +8,7 @@
 
 import Alamofire
 
-struct MostEmailedArticleRequest {
+struct MostViewedArticlesRequest {
     
     // MARK: - Properties
     private var days: Int
@@ -22,9 +22,9 @@ struct MostEmailedArticleRequest {
 }
 
 // MARK: - Extension
-extension MostEmailedArticleRequest: RequestProtocol {
+extension MostViewedArticlesRequest: RequestProtocol {
     var url: String {
-        return "\(Endpoint.baseUrl)/emailed/\(days).json?api-key=\(NetworkUtil.API_KEY)"
+        return "\(Endpoint.baseUrl)/viewed/\(days).json?api-key=\(NetworkUtil.API_KEY)"
     }
     
     var method: HTTPMethod { return .get }
@@ -38,5 +38,3 @@ extension MostEmailedArticleRequest: RequestProtocol {
     }
     
 }
-
-
