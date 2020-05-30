@@ -1,5 +1,5 @@
 //
-//  APIClient.swift
+//  ArticleService.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -8,12 +8,11 @@
 
 import Foundation
 
-protocol APIClientProtocol {
-    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<MostEmailedArticleResponseModel, CommonError>) -> Void)
+protocol ArticleServiceProtocol {
+    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void)
 }
 
-
-final class APIClient {
+final class ArticleService {
     
     // MARK: - Private Properties
     private let executor: RequestExecutorProtocol
@@ -28,13 +27,13 @@ final class APIClient {
 
 
 // MARK: - Extension
-extension APIClient: APIClientProtocol {
-    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<MostEmailedArticleResponseModel, CommonError>) -> Void) {
+extension ArticleService: ArticleServiceProtocol {
+    func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[MostEmailedArticleModel], CommonError>) -> Void) {
         let request = MostEmailedRequest(days: days).getDataRequest()
         executor.executeObject(dataRequest: request, entity: MostEmailedArticleResponseModel.self) { (model, error) in
             switch (model, error) {
             case let (.some(model), .none):
-                completion(.success(model))
+                completion(.success(model.results))
             case let (.none, .some(error)):
                 completion(.failure(error))
             case (.none, .none), (.some(_), .some(_)):
