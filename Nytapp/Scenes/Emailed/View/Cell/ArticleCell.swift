@@ -14,13 +14,25 @@ final class ArticleCell: UITableViewCell {
     // MARK: - Public Properties
     static let cellHeight: CGFloat = 100
     static let cellIdentifier: String = "ArticleCell"
+    weak var delegate: EmailedInteractionProtocol?
     
+    // MARK: - Private Properties
+    private var isChecked: Bool = false {
+        didSet {
+            if isChecked == true {
+                favoriteImage.isHidden = true
+            } else {
+                favoriteImage.image = UIImage(systemName: "star")
+            }
+        }
+    }
+    private var model: ArticleModel?
     
     // MARK: - Outlets
     @IBOutlet private weak var title: UILabel!
     @IBOutlet private weak var abstract: UILabel!
     @IBOutlet private weak var articlePreview: UIImageView!
-    
+    @IBOutlet private weak var favoriteImage: UIImageView!
     
     // MARK: Lifecycles
     override func awakeFromNib() {
@@ -29,6 +41,11 @@ final class ArticleCell: UITableViewCell {
         selectionStyle = .none
         articlePreview.layer.masksToBounds = true
         articlePreview.layer.cornerRadius = 3
+        
+        favoriteImage.image = UIImage(systemName: "star")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(buttonClicked(sender:)))
+        favoriteImage.addGestureRecognizer(tapGesture)
+        favoriteImage.isUserInteractionEnabled = true
     }
     
     override func prepareForReuse() {
@@ -39,6 +56,13 @@ final class ArticleCell: UITableViewCell {
         abstract.text = nil
     }
     
+    @objc func buttonClicked(sender: UIButton) {
+        isChecked = !isChecked
+        if let model = self.model {
+            delegate?.addToFavorite(model: model)
+        }
+    }
+    
 }
 
 
@@ -46,6 +70,7 @@ final class ArticleCell: UITableViewCell {
 extension ArticleCell {
     
     func fill(model: ArticlePresentationModel) {
+        self.model = model.articleModel
         title.text = model.title
         abstract.text = model.abstract
         

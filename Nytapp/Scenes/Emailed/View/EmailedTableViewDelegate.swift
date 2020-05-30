@@ -36,6 +36,7 @@ extension EmailedTableViewDelegate: UITableViewDataSource {
         let model = dataSource[row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellIdentifier) as? ArticleCell {
             cell.fill(model: model)
+            cell.delegate = userInteraction
             return cell
         } else {
             return UITableViewCell()

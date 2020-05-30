@@ -81,6 +81,7 @@ struct ArticlePresentationModel {
     var title: String
     var abstract: String
     var imageUrl: String?
+    var articleModel: ArticleModel
 }
 
 
@@ -90,5 +91,6 @@ extension ArticlePresentationModel {
         self.title = model.title
         self.abstract = model.abstract
         self.imageUrl = model.media.first?.mediaMetadata.filter({ $0.format == "mediumThreeByTwo210" }).first?.url
+        self.articleModel = model
     }
 }

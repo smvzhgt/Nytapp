@@ -28,4 +28,5 @@ protocol EmailedViewProtocol: class {
 // MARK: - TableViewProtocol
 protocol EmailedInteractionProtocol: class {
     func openArticle(link: String)
+    func addToFavorite(model: ArticleModel)
 }

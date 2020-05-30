@@ -67,4 +67,8 @@ extension EmailedViewController: EmailedInteractionProtocol {
         }
     }
     
+    func addToFavorite(model: ArticleModel) {
+        // todo
+    }
+    
 }
