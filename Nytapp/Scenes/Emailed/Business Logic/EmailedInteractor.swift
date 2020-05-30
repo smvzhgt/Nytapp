@@ -1,5 +1,5 @@
 //
-//  StartInteractor.swift
+//  EmailedInteractor.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -8,17 +8,17 @@
 
 import Foundation
 
-final class StartInteractor: NSObject {
+final class EmailedInteractor: NSObject {
     
     // MARK: - Public Properties
-    let presenter: StartPresenterProtocol!
+    let presenter: EmailedPresenterProtocol!
     
     
     // MARK: - Private Properties
     
     
     // MARK: - Initializers
-    init(presenter: StartPresenterProtocol) {
+    init(presenter: EmailedPresenterProtocol) {
         self.presenter = presenter
 
         super.init()
@@ -28,4 +28,4 @@ final class StartInteractor: NSObject {
 
 
 // MARK: - Extension
-extension StartInteractor: StartInteractorProtocol {}
+extension EmailedInteractor: EmailedInteractorProtocol {}

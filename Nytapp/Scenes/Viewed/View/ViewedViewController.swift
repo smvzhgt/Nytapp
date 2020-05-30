@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  ViewedViewController.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class StartViewController: UIViewController {
+final class ViewedViewController: UIViewController {
 
     // MARK: - Public Properties
-    var interactor: StartInteractorProtocol!
+    var interactor: ViewedInteractorProtocol!
     
     
     // MARK: - Lifecycles
@@ -24,4 +24,4 @@ final class StartViewController: UIViewController {
 
 
 // MARK: - Extensions
-extension StartViewController: StartViewProtocol {}
+extension ViewedViewController: ViewedViewProtocol {}

@@ -1,5 +1,5 @@
 //
-//  StartBuilder.swift
+//  SharedBuilder.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-final class StartBuilder: ModuleBuilder {
+final class SharedBuilder: ModuleBuilder {
 
     init() {}
 
     func build() -> UIViewController {
         // Presenter
-        let presenter = StartPresenter()
+        let presenter = SharedPresenter()
         
         // Interactor
-        let interactor = StartInteractor(presenter: presenter)
+        let interactor = SharedInteractor(presenter: presenter)
         
         // View
-        let storyboard = UIStoryboard.init(name: "Start", bundle: nil)
-        let controller = storyboard.instantiateViewController(identifier: "StartViewController") as! StartViewController
+        let storyboard = UIStoryboard.init(name: "Shared", bundle: nil)
+        let controller = storyboard.instantiateViewController(identifier: "SharedViewController") as! SharedViewController
         
         controller.interactor = interactor
         

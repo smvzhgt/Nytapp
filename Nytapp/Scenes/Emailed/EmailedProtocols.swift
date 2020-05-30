@@ -1,5 +1,5 @@
 //
-//  StartProtocols.swift
+//  EmailedProtocols.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -9,17 +9,17 @@
 import Foundation
 
 // MARK: - Business Logic Protocol
-protocol StartInteractorProtocol: class {
+protocol EmailedInteractorProtocol: class {
 
 }
 
 // MARK: - Presentation Protocol
-protocol StartPresenterProtocol: class {
+protocol EmailedPresenterProtocol: class {
 
 }
 
 
 // MARK: - View Protocol
-protocol StartViewProtocol: class {
+protocol EmailedViewProtocol: class {
 
 }

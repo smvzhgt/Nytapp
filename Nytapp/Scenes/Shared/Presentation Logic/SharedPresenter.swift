@@ -1,5 +1,5 @@
 //
-//  StartPresenter.swift
+//  SharedPresenter.swift
 //  Nytapp
 //
 //  Created by oleg on 30.05.2020.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-final class StartPresenter: NSObject {
+final class SharedPresenter: NSObject {
     
     // MARK: - Public Properties
-    weak var view: StartViewProtocol!
+    weak var view: SharedViewProtocol!
     
 }
 
 
 // MARK: - Extension
-extension StartPresenter: StartPresenterProtocol {}
+extension SharedPresenter: SharedPresenterProtocol {}

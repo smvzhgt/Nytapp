@@ -13,13 +13,6 @@
 		0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB0CF7724824500008D61E6 /* Main.storyboard */; };
 		0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB0CF7A24824502008D61E6 /* Assets.xcassets */; };
 		0CB0CF7E24824502008D61E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB0CF7C24824502008D61E6 /* LaunchScreen.storyboard */; };
-		0CD673092482501000D153F6 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD672FF2482501000D153F6 /* StartPresenter.swift */; };
-		0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673002482501000D153F6 /* StartFlow.swift */; };
-		0CD6730B2482501000D153F6 /* StartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673022482501000D153F6 /* StartInteractor.swift */; };
-		0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673032482501000D153F6 /* StartProtocols.swift */; };
-		0CD6730D2482501000D153F6 /* StartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673052482501000D153F6 /* StartBuilder.swift */; };
-		0CD6730E2482501000D153F6 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673072482501000D153F6 /* Start.storyboard */; };
-		0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673082482501000D153F6 /* StartViewController.swift */; };
 		0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */; };
 		0CD6731724825A0C00D153F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0CD6731624825A0C00D153F6 /* Alamofire */; };
 		0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6731924825D7300D153F6 /* RequestExecutor.swift */; };
@@ -37,6 +30,28 @@
 		0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6733D24828A8A00D153F6 /* MostSharedArticleUrl.swift */; };
 		0CD6734024828AC100D153F6 /* MostViewedArticleUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6733F24828AC100D153F6 /* MostViewedArticleUrl.swift */; };
 		0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6734124828B7000D153F6 /* ArticleRequest.swift */; };
+		0CD6735624828EF800D153F6 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6734F24828EF800D153F6 /* MainBuilder.swift */; };
+		0CD6737B2482956300D153F6 /* EmailedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673592482956300D153F6 /* EmailedPresenter.swift */; };
+		0CD6737C2482956300D153F6 /* EmailedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6735A2482956300D153F6 /* EmailedProtocols.swift */; };
+		0CD6737D2482956300D153F6 /* Emailed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD6735C2482956300D153F6 /* Emailed.storyboard */; };
+		0CD6737E2482956300D153F6 /* EmailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6735D2482956300D153F6 /* EmailedViewController.swift */; };
+		0CD6737F2482956300D153F6 /* EmailedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6735E2482956300D153F6 /* EmailedFlow.swift */; };
+		0CD673802482956300D153F6 /* EmailedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673602482956300D153F6 /* EmailedInteractor.swift */; };
+		0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673622482956300D153F6 /* EmailedBuilder.swift */; };
+		0CD673822482956300D153F6 /* SharedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673652482956300D153F6 /* SharedPresenter.swift */; };
+		0CD673832482956300D153F6 /* SharedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673662482956300D153F6 /* SharedFlow.swift */; };
+		0CD673842482956300D153F6 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673682482956300D153F6 /* SharedViewController.swift */; };
+		0CD673852482956300D153F6 /* Shared.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673692482956300D153F6 /* Shared.storyboard */; };
+		0CD673862482956300D153F6 /* SharedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6736A2482956300D153F6 /* SharedProtocols.swift */; };
+		0CD673872482956300D153F6 /* SharedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6736C2482956300D153F6 /* SharedInteractor.swift */; };
+		0CD673882482956300D153F6 /* SharedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6736E2482956300D153F6 /* SharedBuilder.swift */; };
+		0CD673892482956300D153F6 /* ViewedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673702482956300D153F6 /* ViewedProtocols.swift */; };
+		0CD6738A2482956300D153F6 /* ViewedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673722482956300D153F6 /* ViewedPresenter.swift */; };
+		0CD6738B2482956300D153F6 /* ViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673742482956300D153F6 /* ViewedViewController.swift */; };
+		0CD6738C2482956300D153F6 /* Viewed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673752482956300D153F6 /* Viewed.storyboard */; };
+		0CD6738D2482956300D153F6 /* ViewedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673762482956300D153F6 /* ViewedFlow.swift */; };
+		0CD6738E2482956300D153F6 /* ViewedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673782482956300D153F6 /* ViewedInteractor.swift */; };
+		0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6737A2482956300D153F6 /* ViewedBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,13 +63,6 @@
 		0CB0CF7A24824502008D61E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB0CF7D24824502008D61E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CB0CF7F24824502008D61E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CD672FF2482501000D153F6 /* StartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
-		0CD673002482501000D153F6 /* StartFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartFlow.swift; sourceTree = "<group>"; };
-		0CD673022482501000D153F6 /* StartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInteractor.swift; sourceTree = "<group>"; };
-		0CD673032482501000D153F6 /* StartProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartProtocols.swift; sourceTree = "<group>"; };
-		0CD673052482501000D153F6 /* StartBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartBuilder.swift; sourceTree = "<group>"; };
-		0CD673072482501000D153F6 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
-		0CD673082482501000D153F6 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		0CD6731924825D7300D153F6 /* RequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
 		0CD6731B24825EC100D153F6 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
@@ -71,6 +79,28 @@
 		0CD6733D24828A8A00D153F6 /* MostSharedArticleUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedArticleUrl.swift; sourceTree = "<group>"; };
 		0CD6733F24828AC100D153F6 /* MostViewedArticleUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedArticleUrl.swift; sourceTree = "<group>"; };
 		0CD6734124828B7000D153F6 /* ArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequest.swift; sourceTree = "<group>"; };
+		0CD6734F24828EF800D153F6 /* MainBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		0CD673592482956300D153F6 /* EmailedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedPresenter.swift; sourceTree = "<group>"; };
+		0CD6735A2482956300D153F6 /* EmailedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedProtocols.swift; sourceTree = "<group>"; };
+		0CD6735C2482956300D153F6 /* Emailed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Emailed.storyboard; sourceTree = "<group>"; };
+		0CD6735D2482956300D153F6 /* EmailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedViewController.swift; sourceTree = "<group>"; };
+		0CD6735E2482956300D153F6 /* EmailedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedFlow.swift; sourceTree = "<group>"; };
+		0CD673602482956300D153F6 /* EmailedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedInteractor.swift; sourceTree = "<group>"; };
+		0CD673622482956300D153F6 /* EmailedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedBuilder.swift; sourceTree = "<group>"; };
+		0CD673652482956300D153F6 /* SharedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedPresenter.swift; sourceTree = "<group>"; };
+		0CD673662482956300D153F6 /* SharedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFlow.swift; sourceTree = "<group>"; };
+		0CD673682482956300D153F6 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		0CD673692482956300D153F6 /* Shared.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shared.storyboard; sourceTree = "<group>"; };
+		0CD6736A2482956300D153F6 /* SharedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedProtocols.swift; sourceTree = "<group>"; };
+		0CD6736C2482956300D153F6 /* SharedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedInteractor.swift; sourceTree = "<group>"; };
+		0CD6736E2482956300D153F6 /* SharedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBuilder.swift; sourceTree = "<group>"; };
+		0CD673702482956300D153F6 /* ViewedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedProtocols.swift; sourceTree = "<group>"; };
+		0CD673722482956300D153F6 /* ViewedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedPresenter.swift; sourceTree = "<group>"; };
+		0CD673742482956300D153F6 /* ViewedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedViewController.swift; sourceTree = "<group>"; };
+		0CD673752482956300D153F6 /* Viewed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Viewed.storyboard; sourceTree = "<group>"; };
+		0CD673762482956300D153F6 /* ViewedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedFlow.swift; sourceTree = "<group>"; };
+		0CD673782482956300D153F6 /* ViewedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedInteractor.swift; sourceTree = "<group>"; };
+		0CD6737A2482956300D153F6 /* ViewedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +194,10 @@
 		0CD672FB24824EC900D153F6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0CD672FD24824F8D00D153F6 /* Start */,
+				0CD673572482956300D153F6 /* Emailed */,
+				0CD673632482956300D153F6 /* Shared */,
+				0CD6736F2482956300D153F6 /* Viewed */,
+				0CD6734424828EF800D153F6 /* Main */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -174,52 +207,6 @@
 			children = (
 			);
 			path = Storage;
-			sourceTree = "<group>";
-		};
-		0CD672FD24824F8D00D153F6 /* Start */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673002482501000D153F6 /* StartFlow.swift */,
-				0CD673032482501000D153F6 /* StartProtocols.swift */,
-				0CD673042482501000D153F6 /* Builder */,
-				0CD673012482501000D153F6 /* Business Logic */,
-				0CD672FE2482501000D153F6 /* Presentation Logic */,
-				0CD673062482501000D153F6 /* View */,
-			);
-			path = Start;
-			sourceTree = "<group>";
-		};
-		0CD672FE2482501000D153F6 /* Presentation Logic */ = {
-			isa = PBXGroup;
-			children = (
-				0CD672FF2482501000D153F6 /* StartPresenter.swift */,
-			);
-			path = "Presentation Logic";
-			sourceTree = "<group>";
-		};
-		0CD673012482501000D153F6 /* Business Logic */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673022482501000D153F6 /* StartInteractor.swift */,
-			);
-			path = "Business Logic";
-			sourceTree = "<group>";
-		};
-		0CD673042482501000D153F6 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673052482501000D153F6 /* StartBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		0CD673062482501000D153F6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673072482501000D153F6 /* Start.storyboard */,
-				0CD673082482501000D153F6 /* StartViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		0CD6731824825D5C00D153F6 /* Network */ = {
@@ -272,6 +259,160 @@
 				0CD6733F24828AC100D153F6 /* MostViewedArticleUrl.swift */,
 			);
 			path = Urls;
+			sourceTree = "<group>";
+		};
+		0CD6734424828EF800D153F6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6734E24828EF800D153F6 /* Builder */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0CD6734E24828EF800D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6734F24828EF800D153F6 /* MainBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0CD673572482956300D153F6 /* Emailed */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6735E2482956300D153F6 /* EmailedFlow.swift */,
+				0CD6735A2482956300D153F6 /* EmailedProtocols.swift */,
+				0CD673612482956300D153F6 /* Builder */,
+				0CD6735F2482956300D153F6 /* Business Logic */,
+				0CD673582482956300D153F6 /* Presentation Logic */,
+				0CD6735B2482956300D153F6 /* View */,
+			);
+			path = Emailed;
+			sourceTree = "<group>";
+		};
+		0CD673582482956300D153F6 /* Presentation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673592482956300D153F6 /* EmailedPresenter.swift */,
+			);
+			path = "Presentation Logic";
+			sourceTree = "<group>";
+		};
+		0CD6735B2482956300D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6735C2482956300D153F6 /* Emailed.storyboard */,
+				0CD6735D2482956300D153F6 /* EmailedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CD6735F2482956300D153F6 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673602482956300D153F6 /* EmailedInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		0CD673612482956300D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673622482956300D153F6 /* EmailedBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0CD673632482956300D153F6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673662482956300D153F6 /* SharedFlow.swift */,
+				0CD6736A2482956300D153F6 /* SharedProtocols.swift */,
+				0CD6736D2482956300D153F6 /* Builder */,
+				0CD6736B2482956300D153F6 /* Business Logic */,
+				0CD673642482956300D153F6 /* Presentation Logic */,
+				0CD673672482956300D153F6 /* View */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0CD673642482956300D153F6 /* Presentation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673652482956300D153F6 /* SharedPresenter.swift */,
+			);
+			path = "Presentation Logic";
+			sourceTree = "<group>";
+		};
+		0CD673672482956300D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673682482956300D153F6 /* SharedViewController.swift */,
+				0CD673692482956300D153F6 /* Shared.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CD6736B2482956300D153F6 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6736C2482956300D153F6 /* SharedInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		0CD6736D2482956300D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6736E2482956300D153F6 /* SharedBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0CD6736F2482956300D153F6 /* Viewed */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673762482956300D153F6 /* ViewedFlow.swift */,
+				0CD673702482956300D153F6 /* ViewedProtocols.swift */,
+				0CD673792482956300D153F6 /* Builder */,
+				0CD673772482956300D153F6 /* Business Logic */,
+				0CD673712482956300D153F6 /* Presentation Logic */,
+				0CD673732482956300D153F6 /* View */,
+			);
+			path = Viewed;
+			sourceTree = "<group>";
+		};
+		0CD673712482956300D153F6 /* Presentation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673722482956300D153F6 /* ViewedPresenter.swift */,
+			);
+			path = "Presentation Logic";
+			sourceTree = "<group>";
+		};
+		0CD673732482956300D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673742482956300D153F6 /* ViewedViewController.swift */,
+				0CD673752482956300D153F6 /* Viewed.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CD673772482956300D153F6 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673782482956300D153F6 /* ViewedInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		0CD673792482956300D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6737A2482956300D153F6 /* ViewedBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +480,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB0CF7E24824502008D61E6 /* LaunchScreen.storyboard in Resources */,
-				0CD6730E2482501000D153F6 /* Start.storyboard in Resources */,
+				0CD6737D2482956300D153F6 /* Emailed.storyboard in Resources */,
+				0CD6738C2482956300D153F6 /* Viewed.storyboard in Resources */,
 				0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */,
 				0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */,
+				0CD673852482956300D153F6 /* Shared.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,31 +495,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD6738B2482956300D153F6 /* ViewedViewController.swift in Sources */,
 				0CD6734024828AC100D153F6 /* MostViewedArticleUrl.swift in Sources */,
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
+				0CD6738D2482956300D153F6 /* ViewedFlow.swift in Sources */,
 				0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */,
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
-				0CD6730B2482501000D153F6 /* StartInteractor.swift in Sources */,
+				0CD6737B2482956300D153F6 /* EmailedPresenter.swift in Sources */,
+				0CD6738A2482956300D153F6 /* ViewedPresenter.swift in Sources */,
+				0CD673832482956300D153F6 /* SharedFlow.swift in Sources */,
 				0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */,
-				0CD6730D2482501000D153F6 /* StartBuilder.swift in Sources */,
 				0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */,
 				0CD673232482604100D153F6 /* NetworkUtil.swift in Sources */,
 				0CD673332482851800D153F6 /* ArticleService.swift in Sources */,
 				0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */,
+				0CD6738E2482956300D153F6 /* ViewedInteractor.swift in Sources */,
+				0CD6737E2482956300D153F6 /* EmailedViewController.swift in Sources */,
 				0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */,
+				0CD673842482956300D153F6 /* SharedViewController.swift in Sources */,
+				0CD673802482956300D153F6 /* EmailedInteractor.swift in Sources */,
+				0CD673862482956300D153F6 /* SharedProtocols.swift in Sources */,
+				0CD6735624828EF800D153F6 /* MainBuilder.swift in Sources */,
 				0CD6733C24828A3E00D153F6 /* UrlBuilderProtocol.swift in Sources */,
-				0CD673092482501000D153F6 /* StartPresenter.swift in Sources */,
+				0CD6737F2482956300D153F6 /* EmailedFlow.swift in Sources */,
+				0CD673872482956300D153F6 /* SharedInteractor.swift in Sources */,
+				0CD6737C2482956300D153F6 /* EmailedProtocols.swift in Sources */,
 				0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */,
 				0CD6733A248289E400D153F6 /* MostEmailedArticleUrl.swift in Sources */,
 				0CB0CF7224824500008D61E6 /* AppDelegate.swift in Sources */,
-				0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */,
-				0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */,
 				0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */,
 				0CD673272482621900D153F6 /* ArticleModel.swift in Sources */,
+				0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */,
+				0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */,
 				0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */,
-				0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
 				0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */,
+				0CD673892482956300D153F6 /* ViewedProtocols.swift in Sources */,
+				0CD673822482956300D153F6 /* SharedPresenter.swift in Sources */,
+				0CD673882482956300D153F6 /* SharedBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
