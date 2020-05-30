@@ -23,7 +23,7 @@ final class EmailedBuilder: ModuleBuilder {
         let storyboard = UIStoryboard.init(name: "Emailed", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "EmailedViewController") as! EmailedViewController
         
-        let tableViewDelegate = EmailedTableViewDelegate(interactionProtocol: controller)
+        let tableViewDelegate = EmailedTableViewDelegate(userInteraction: controller)
         
         controller.delegate = tableViewDelegate
         controller.interactor = interactor

@@ -12,18 +12,17 @@ final class EmailedTableViewDelegate: NSObject {
     
     // MARK: - Public Properties
     var dataSource: [ArticlePresentationModel]
-//    var isLoading: Bool = false
     
     
     // MARK: - Private Properties
-    private var interactionProtocol: EmailedInteractionProtocol
-    
+    private var userInteraction: EmailedInteractionProtocol
     
     
     // MARK: - Initializers
-    init(interactionProtocol: EmailedInteractionProtocol, presentationModels: [ArticlePresentationModel] = []) {
+    init(userInteraction: EmailedInteractionProtocol,
+         presentationModels: [ArticlePresentationModel] = []) {
         self.dataSource = presentationModels
-        self.interactionProtocol = interactionProtocol
+        self.userInteraction = userInteraction
     }
     
 }
@@ -62,7 +61,8 @@ extension EmailedTableViewDelegate: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        let model = dataSource[indexPath.row]
+        userInteraction.openArticle(link: model.url)
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

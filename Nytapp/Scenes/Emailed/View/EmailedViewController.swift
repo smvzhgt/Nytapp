@@ -57,6 +57,14 @@ extension EmailedViewController: EmailedViewProtocol {
 }
 
 extension EmailedViewController: EmailedInteractionProtocol {
-    
+    func openArticle(link: String) {
+        guard let url = URL(string: link) else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+    }
     
 }
