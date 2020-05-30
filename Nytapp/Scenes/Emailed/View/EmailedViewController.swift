@@ -9,7 +9,7 @@
 import UIKit
 
 final class EmailedViewController: UIViewController {
-
+    
     // MARK: - Public Properties
     var interactor: EmailedInteractorProtocol!
     var delegate: EmailedTableViewDelegate!
@@ -35,20 +35,20 @@ final class EmailedViewController: UIViewController {
         tableView.delegate = delegate
         tableView.dataSource = delegate
     }
-
+    
     private func fetchUsers() {
         let request = Emailed.Fetch.Request(days: 1)
         interactor.fetchArticles(request: request)
     }
-
+    
 }
 
 
 // MARK: - Extensions
 extension EmailedViewController: EmailedViewProtocol {
     func displayFetchArticles(viewModel: Emailed.Fetch.ViewModel) {
-        if let _ = viewModel.error {
-            //            showWarningDialog(message: error.localizedDescription) // todo show error
+        if let error = viewModel.error {
+            showWarningDialog(message: error.localizedDescription)
         } else {
             delegate.dataSource = viewModel.models
             tableView.reloadData()
@@ -57,6 +57,6 @@ extension EmailedViewController: EmailedViewProtocol {
 }
 
 extension EmailedViewController: EmailedInteractionProtocol {
-
+    
     
 }

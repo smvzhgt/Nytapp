@@ -55,6 +55,7 @@
 		0CD6739124829D9D00D153F6 /* EmailedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */; };
 		0CD673952482A35A00D153F6 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673932482A35A00D153F6 /* ArticleCell.xib */; };
 		0CD673962482A35A00D153F6 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673942482A35A00D153F6 /* ArticleCell.swift */; };
+		0CD673982482B8DB00D153F6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673972482B8DB00D153F6 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedTableViewDelegate.swift; sourceTree = "<group>"; };
 		0CD673932482A35A00D153F6 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		0CD673942482A35A00D153F6 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		0CD673972482B8DB00D153F6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 		0CD672F924824EB000D153F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0CD673972482B8DB00D153F6 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				0CD6733A248289E400D153F6 /* MostEmailedArticleUrl.swift in Sources */,
 				0CB0CF7224824500008D61E6 /* AppDelegate.swift in Sources */,
 				0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */,
+				0CD673982482B8DB00D153F6 /* UIViewController+Extensions.swift in Sources */,
 				0CD673272482621900D153F6 /* ArticleModel.swift in Sources */,
 				0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */,
 				0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */,
