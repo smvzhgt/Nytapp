@@ -9,19 +9,20 @@
 import Foundation
 import Alamofire
 
-class RequestExecutor {
+protocol RequestExecutorProtocol: class {
+    func executeObject<T: Codable>(dataRequest: DataRequest, entity: T.Type, completion: @escaping (_ response: T?, _ error: CommonError?) -> ())
+}
+
+
+final class RequestExecutor {}
+
+
+// MARK: - Extension
+extension RequestExecutor: RequestExecutorProtocol {
     
-    // MARK: - Initializers
-    private init() {}
-    
-    
-    static let share = RequestExecutor()
-    
-    
-    // Execute object
     func executeObject<T: Codable>(dataRequest: DataRequest,
                                    entity: T.Type,
-                                   completion: @escaping (_ response: T?, _ error: Error?) -> ()) {
+                                   completion: @escaping (_ response: T?, _ error: CommonError?) -> ()) {
         dataRequest.responseData { response in
             switch response.result {
             case .success(let data):
@@ -32,7 +33,7 @@ class RequestExecutor {
                     completion(nil, CommonError.decodingDataError)
                 }
             case .failure(let error):
-                completion(nil, error)
+                completion(nil, CommonError.networkError(error: error))
             }
         }
     }
