@@ -22,6 +22,13 @@
 		0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673082482501000D153F6 /* StartViewController.swift */; };
 		0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */; };
 		0CD6731724825A0C00D153F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0CD6731624825A0C00D153F6 /* Alamofire */; };
+		0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6731924825D7300D153F6 /* RequestExecutor.swift */; };
+		0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6731B24825EC100D153F6 /* RequestProtocol.swift */; };
+		0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6731D24825EE000D153F6 /* Endpoint.swift */; };
+		0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */; };
+		0CD673232482604100D153F6 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673222482604100D153F6 /* NetworkUtil.swift */; };
+		0CD673272482621900D153F6 /* MostEmailedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673262482621900D153F6 /* MostEmailedModel.swift */; };
+		0CD6732B2482719800D153F6 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6732A2482719800D153F6 /* CommonError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,13 @@
 		0CD673072482501000D153F6 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		0CD673082482501000D153F6 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
+		0CD6731924825D7300D153F6 /* RequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		0CD6731B24825EC100D153F6 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		0CD6731D24825EE000D153F6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedRequest.swift; sourceTree = "<group>"; };
+		0CD673222482604100D153F6 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		0CD673262482621900D153F6 /* MostEmailedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedModel.swift; sourceTree = "<group>"; };
+		0CD6732A2482719800D153F6 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 		0CB0CF7024824500008D61E6 /* Nytapp */ = {
 			isa = PBXGroup;
 			children = (
+				0CD6731824825D5C00D153F6 /* Network */,
 				0CD672FC24824EF700D153F6 /* Storage */,
 				0CD672FB24824EC900D153F6 /* Scenes */,
 				0CD672FA24824EB900D153F6 /* Common */,
@@ -124,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */,
+				0CD6732A2482719800D153F6 /* CommonError.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -187,6 +203,43 @@
 				0CD673082482501000D153F6 /* StartViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0CD6731824825D5C00D153F6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CD67324248261E600D153F6 /* Models */,
+				0CD6731F24825EFC00D153F6 /* DataRequest */,
+				0CD6731924825D7300D153F6 /* RequestExecutor.swift */,
+				0CD6731B24825EC100D153F6 /* RequestProtocol.swift */,
+				0CD6731D24825EE000D153F6 /* Endpoint.swift */,
+				0CD673222482604100D153F6 /* NetworkUtil.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0CD6731F24825EFC00D153F6 /* DataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6732024825F2700D153F6 /* MostEmailedRequest.swift */,
+			);
+			path = DataRequest;
+			sourceTree = "<group>";
+		};
+		0CD67324248261E600D153F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CD67325248261F500D153F6 /* ResponseModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CD67325248261F500D153F6 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673262482621900D153F6 /* MostEmailedModel.swift */,
+			);
+			path = ResponseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +321,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
+				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
 				0CD6730B2482501000D153F6 /* StartInteractor.swift in Sources */,
+				0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */,
 				0CD6730D2482501000D153F6 /* StartBuilder.swift in Sources */,
+				0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */,
+				0CD673232482604100D153F6 /* NetworkUtil.swift in Sources */,
+				0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */,
 				0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */,
 				0CD673092482501000D153F6 /* StartPresenter.swift in Sources */,
+				0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */,
 				0CB0CF7224824500008D61E6 /* AppDelegate.swift in Sources */,
 				0CD6730F2482501000D153F6 /* StartViewController.swift in Sources */,
 				0CD6730C2482501000D153F6 /* StartProtocols.swift in Sources */,
+				0CD673272482621900D153F6 /* MostEmailedModel.swift in Sources */,
 				0CD6730A2482501000D153F6 /* StartFlow.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
 			);
