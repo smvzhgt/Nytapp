@@ -22,7 +22,7 @@ final class EmailedViewController: UIViewController {
     // MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         fetchUsers()
         configureTableView()
     }

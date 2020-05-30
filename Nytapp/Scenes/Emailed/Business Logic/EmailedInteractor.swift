@@ -19,7 +19,8 @@ final class EmailedInteractor: NSObject {
     
     
     // MARK: - Initializers
-    init(presenter: EmailedPresenterProtocol, service: ArticleServiceProtocol = ArticleService()) {
+    init(presenter: EmailedPresenterProtocol,
+         service: ArticleServiceProtocol = ArticleService()) {
         self.presenter = presenter
         self.service = service
 
