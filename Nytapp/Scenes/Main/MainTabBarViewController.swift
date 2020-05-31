@@ -45,11 +45,11 @@ class MainTabBarViewController: UITabBarController {
         mostSharedViewController.tabBarItem = sharedItem
 
 
-        let mostViewedViewController = ViewedBuilder().build()
-        let viewedItem = UITabBarItem()
-        viewedItem.title = "Viewed"
-        viewedItem.image = UIImage(systemName: "square")
-        mostViewedViewController.tabBarItem = viewedItem
+//        let mostViewedViewController = ViewedBuilder().build()
+//        let viewedItem = UITabBarItem()
+//        viewedItem.title = "Viewed"
+//        viewedItem.image = UIImage(systemName: "square")
+//        mostViewedViewController.tabBarItem = viewedItem
 
         
         let favoriteViewedViewController = FavoriteBuilder().build()
@@ -60,7 +60,7 @@ class MainTabBarViewController: UITabBarController {
         
         self.viewControllers = [mostEmailedViewController,
                                 mostSharedViewController,
-                                mostViewedViewController,
+//                                mostViewedViewController,
                                 favoriteViewedViewController]
         
     }

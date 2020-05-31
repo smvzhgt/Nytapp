@@ -38,20 +38,6 @@
 		0CD6737F2482956300D153F6 /* EmailedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6735E2482956300D153F6 /* EmailedFlow.swift */; };
 		0CD673802482956300D153F6 /* EmailedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673602482956300D153F6 /* EmailedInteractor.swift */; };
 		0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673622482956300D153F6 /* EmailedBuilder.swift */; };
-		0CD673822482956300D153F6 /* SharedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673652482956300D153F6 /* SharedPresenter.swift */; };
-		0CD673832482956300D153F6 /* SharedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673662482956300D153F6 /* SharedFlow.swift */; };
-		0CD673842482956300D153F6 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673682482956300D153F6 /* SharedViewController.swift */; };
-		0CD673852482956300D153F6 /* Shared.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673692482956300D153F6 /* Shared.storyboard */; };
-		0CD673862482956300D153F6 /* SharedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6736A2482956300D153F6 /* SharedProtocols.swift */; };
-		0CD673872482956300D153F6 /* SharedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6736C2482956300D153F6 /* SharedInteractor.swift */; };
-		0CD673882482956300D153F6 /* SharedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6736E2482956300D153F6 /* SharedBuilder.swift */; };
-		0CD673892482956300D153F6 /* ViewedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673702482956300D153F6 /* ViewedProtocols.swift */; };
-		0CD6738A2482956300D153F6 /* ViewedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673722482956300D153F6 /* ViewedPresenter.swift */; };
-		0CD6738B2482956300D153F6 /* ViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673742482956300D153F6 /* ViewedViewController.swift */; };
-		0CD6738C2482956300D153F6 /* Viewed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673752482956300D153F6 /* Viewed.storyboard */; };
-		0CD6738D2482956300D153F6 /* ViewedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673762482956300D153F6 /* ViewedFlow.swift */; };
-		0CD6738E2482956300D153F6 /* ViewedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673782482956300D153F6 /* ViewedInteractor.swift */; };
-		0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6737A2482956300D153F6 /* ViewedBuilder.swift */; };
 		0CD6739124829D9D00D153F6 /* EmailedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */; };
 		0CD673952482A35A00D153F6 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673932482A35A00D153F6 /* ArticleCell.xib */; };
 		0CD673962482A35A00D153F6 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673942482A35A00D153F6 /* ArticleCell.swift */; };
@@ -71,6 +57,16 @@
 		0CD673E62483954B00D153F6 /* FavoriteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673DC2483954B00D153F6 /* FavoriteBuilder.swift */; };
 		0CD673EE2483973900D153F6 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673EC2483973900D153F6 /* FavoriteCell.swift */; };
 		0CD673EF2483973900D153F6 /* FavoriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673ED2483973900D153F6 /* FavoriteCell.xib */; };
+		0CD674002483A42600D153F6 /* SharedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673F22483A42600D153F6 /* SharedPresenter.swift */; };
+		0CD674012483A42600D153F6 /* SharedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673F32483A42600D153F6 /* SharedFlow.swift */; };
+		0CD674022483A42600D153F6 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673F52483A42600D153F6 /* SharedViewController.swift */; };
+		0CD674032483A42600D153F6 /* SharedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673F72483A42600D153F6 /* SharedCell.xib */; };
+		0CD674042483A42600D153F6 /* SharedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673F82483A42600D153F6 /* SharedCell.swift */; };
+		0CD674052483A42600D153F6 /* Shared.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD673F92483A42600D153F6 /* Shared.storyboard */; };
+		0CD674062483A42600D153F6 /* SharedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FA2483A42600D153F6 /* SharedTableViewDelegate.swift */; };
+		0CD674072483A42600D153F6 /* SharedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FB2483A42600D153F6 /* SharedProtocols.swift */; };
+		0CD674082483A42600D153F6 /* SharedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FD2483A42600D153F6 /* SharedInteractor.swift */; };
+		0CD674092483A42600D153F6 /* SharedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FF2483A42600D153F6 /* SharedBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,20 +102,6 @@
 		0CD6735E2482956300D153F6 /* EmailedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedFlow.swift; sourceTree = "<group>"; };
 		0CD673602482956300D153F6 /* EmailedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedInteractor.swift; sourceTree = "<group>"; };
 		0CD673622482956300D153F6 /* EmailedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailedBuilder.swift; sourceTree = "<group>"; };
-		0CD673652482956300D153F6 /* SharedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedPresenter.swift; sourceTree = "<group>"; };
-		0CD673662482956300D153F6 /* SharedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFlow.swift; sourceTree = "<group>"; };
-		0CD673682482956300D153F6 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
-		0CD673692482956300D153F6 /* Shared.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shared.storyboard; sourceTree = "<group>"; };
-		0CD6736A2482956300D153F6 /* SharedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedProtocols.swift; sourceTree = "<group>"; };
-		0CD6736C2482956300D153F6 /* SharedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedInteractor.swift; sourceTree = "<group>"; };
-		0CD6736E2482956300D153F6 /* SharedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBuilder.swift; sourceTree = "<group>"; };
-		0CD673702482956300D153F6 /* ViewedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedProtocols.swift; sourceTree = "<group>"; };
-		0CD673722482956300D153F6 /* ViewedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedPresenter.swift; sourceTree = "<group>"; };
-		0CD673742482956300D153F6 /* ViewedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedViewController.swift; sourceTree = "<group>"; };
-		0CD673752482956300D153F6 /* Viewed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Viewed.storyboard; sourceTree = "<group>"; };
-		0CD673762482956300D153F6 /* ViewedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedFlow.swift; sourceTree = "<group>"; };
-		0CD673782482956300D153F6 /* ViewedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedInteractor.swift; sourceTree = "<group>"; };
-		0CD6737A2482956300D153F6 /* ViewedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedBuilder.swift; sourceTree = "<group>"; };
 		0CD6739024829D9D00D153F6 /* EmailedTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedTableViewDelegate.swift; sourceTree = "<group>"; };
 		0CD673932482A35A00D153F6 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		0CD673942482A35A00D153F6 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
@@ -139,6 +121,16 @@
 		0CD673DC2483954B00D153F6 /* FavoriteBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteBuilder.swift; sourceTree = "<group>"; };
 		0CD673EC2483973900D153F6 /* FavoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		0CD673ED2483973900D153F6 /* FavoriteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCell.xib; sourceTree = "<group>"; };
+		0CD673F22483A42600D153F6 /* SharedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedPresenter.swift; sourceTree = "<group>"; };
+		0CD673F32483A42600D153F6 /* SharedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFlow.swift; sourceTree = "<group>"; };
+		0CD673F52483A42600D153F6 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		0CD673F72483A42600D153F6 /* SharedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SharedCell.xib; sourceTree = "<group>"; };
+		0CD673F82483A42600D153F6 /* SharedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedCell.swift; sourceTree = "<group>"; };
+		0CD673F92483A42600D153F6 /* Shared.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shared.storyboard; sourceTree = "<group>"; };
+		0CD673FA2483A42600D153F6 /* SharedTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTableViewDelegate.swift; sourceTree = "<group>"; };
+		0CD673FB2483A42600D153F6 /* SharedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedProtocols.swift; sourceTree = "<group>"; };
+		0CD673FD2483A42600D153F6 /* SharedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedInteractor.swift; sourceTree = "<group>"; };
+		0CD673FF2483A42600D153F6 /* SharedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,10 +225,9 @@
 		0CD672FB24824EC900D153F6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0CD673F02483A42600D153F6 /* Shared */,
 				0CD673CD2483954B00D153F6 /* Favorite */,
 				0CD673572482956300D153F6 /* Emailed */,
-				0CD673632482956300D153F6 /* Shared */,
-				0CD6736F2482956300D153F6 /* Viewed */,
 				0CD6734424828EF800D153F6 /* Main */,
 			);
 			path = Scenes;
@@ -367,98 +358,6 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
-		0CD673632482956300D153F6 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673662482956300D153F6 /* SharedFlow.swift */,
-				0CD6736A2482956300D153F6 /* SharedProtocols.swift */,
-				0CD6736D2482956300D153F6 /* Builder */,
-				0CD6736B2482956300D153F6 /* Business Logic */,
-				0CD673642482956300D153F6 /* Presentation Logic */,
-				0CD673672482956300D153F6 /* View */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		0CD673642482956300D153F6 /* Presentation Logic */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673652482956300D153F6 /* SharedPresenter.swift */,
-			);
-			path = "Presentation Logic";
-			sourceTree = "<group>";
-		};
-		0CD673672482956300D153F6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673682482956300D153F6 /* SharedViewController.swift */,
-				0CD673692482956300D153F6 /* Shared.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0CD6736B2482956300D153F6 /* Business Logic */ = {
-			isa = PBXGroup;
-			children = (
-				0CD6736C2482956300D153F6 /* SharedInteractor.swift */,
-			);
-			path = "Business Logic";
-			sourceTree = "<group>";
-		};
-		0CD6736D2482956300D153F6 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				0CD6736E2482956300D153F6 /* SharedBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		0CD6736F2482956300D153F6 /* Viewed */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673762482956300D153F6 /* ViewedFlow.swift */,
-				0CD673702482956300D153F6 /* ViewedProtocols.swift */,
-				0CD673792482956300D153F6 /* Builder */,
-				0CD673772482956300D153F6 /* Business Logic */,
-				0CD673712482956300D153F6 /* Presentation Logic */,
-				0CD673732482956300D153F6 /* View */,
-			);
-			path = Viewed;
-			sourceTree = "<group>";
-		};
-		0CD673712482956300D153F6 /* Presentation Logic */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673722482956300D153F6 /* ViewedPresenter.swift */,
-			);
-			path = "Presentation Logic";
-			sourceTree = "<group>";
-		};
-		0CD673732482956300D153F6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673742482956300D153F6 /* ViewedViewController.swift */,
-				0CD673752482956300D153F6 /* Viewed.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0CD673772482956300D153F6 /* Business Logic */ = {
-			isa = PBXGroup;
-			children = (
-				0CD673782482956300D153F6 /* ViewedInteractor.swift */,
-			);
-			path = "Business Logic";
-			sourceTree = "<group>";
-		};
-		0CD673792482956300D153F6 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				0CD6737A2482956300D153F6 /* ViewedBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
 		0CD673922482A31900D153F6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +443,63 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		0CD673F02483A42600D153F6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673F32483A42600D153F6 /* SharedFlow.swift */,
+				0CD673FB2483A42600D153F6 /* SharedProtocols.swift */,
+				0CD673FE2483A42600D153F6 /* Builder */,
+				0CD673FC2483A42600D153F6 /* Business Logic */,
+				0CD673F12483A42600D153F6 /* Presentation Logic */,
+				0CD673F42483A42600D153F6 /* View */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0CD673F12483A42600D153F6 /* Presentation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673F22483A42600D153F6 /* SharedPresenter.swift */,
+			);
+			path = "Presentation Logic";
+			sourceTree = "<group>";
+		};
+		0CD673F42483A42600D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673F62483A42600D153F6 /* Cell */,
+				0CD673F52483A42600D153F6 /* SharedViewController.swift */,
+				0CD673F92483A42600D153F6 /* Shared.storyboard */,
+				0CD673FA2483A42600D153F6 /* SharedTableViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CD673F62483A42600D153F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673F72483A42600D153F6 /* SharedCell.xib */,
+				0CD673F82483A42600D153F6 /* SharedCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CD673FC2483A42600D153F6 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673FD2483A42600D153F6 /* SharedInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		0CD673FE2483A42600D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD673FF2483A42600D153F6 /* SharedBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -611,12 +567,12 @@
 				0CB0CF7E24824502008D61E6 /* LaunchScreen.storyboard in Resources */,
 				0CD6737D2482956300D153F6 /* Emailed.storyboard in Resources */,
 				0CD673E02483954B00D153F6 /* Favorite.storyboard in Resources */,
-				0CD6738C2482956300D153F6 /* Viewed.storyboard in Resources */,
 				0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */,
 				0CD673EF2483973900D153F6 /* FavoriteCell.xib in Resources */,
+				0CD674052483A42600D153F6 /* Shared.storyboard in Resources */,
 				0CD673952482A35A00D153F6 /* ArticleCell.xib in Resources */,
+				0CD674032483A42600D153F6 /* SharedCell.xib in Resources */,
 				0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */,
-				0CD673852482956300D153F6 /* Shared.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,60 +583,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CD6738B2482956300D153F6 /* ViewedViewController.swift in Sources */,
 				0CD673CC2483127800D153F6 /* ArticleEntity+CoreDataProperties.swift in Sources */,
 				0CD6734024828AC100D153F6 /* MostViewedArticleUrl.swift in Sources */,
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
+				0CD674002483A42600D153F6 /* SharedPresenter.swift in Sources */,
 				0CD6739A2482C03400D153F6 /* MainTabBarViewController.swift in Sources */,
 				0CD673CB2483127800D153F6 /* ArticleEntity+CoreDataClass.swift in Sources */,
 				0CD673E12483954B00D153F6 /* FavoriteTableViewDelegate.swift in Sources */,
-				0CD6738D2482956300D153F6 /* ViewedFlow.swift in Sources */,
 				0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */,
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
 				0CD6737B2482956300D153F6 /* EmailedPresenter.swift in Sources */,
-				0CD6738A2482956300D153F6 /* ViewedPresenter.swift in Sources */,
+				0CD674082483A42600D153F6 /* SharedInteractor.swift in Sources */,
+				0CD674042483A42600D153F6 /* SharedCell.swift in Sources */,
 				0CD673962482A35A00D153F6 /* ArticleCell.swift in Sources */,
 				0CD673E52483954B00D153F6 /* FavoriteInteractor.swift in Sources */,
-				0CD673832482956300D153F6 /* SharedFlow.swift in Sources */,
 				0CD673EE2483973900D153F6 /* FavoriteCell.swift in Sources */,
 				0CD673DF2483954B00D153F6 /* FavoriteFlow.swift in Sources */,
 				0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */,
 				0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */,
+				0CD674022483A42600D153F6 /* SharedViewController.swift in Sources */,
 				0CD673232482604100D153F6 /* NetworkUtil.swift in Sources */,
 				0CD673332482851800D153F6 /* ArticleService.swift in Sources */,
 				0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */,
-				0CD6738E2482956300D153F6 /* ViewedInteractor.swift in Sources */,
+				0CD674092483A42600D153F6 /* SharedBuilder.swift in Sources */,
 				0CD6737E2482956300D153F6 /* EmailedViewController.swift in Sources */,
 				0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */,
-				0CD673842482956300D153F6 /* SharedViewController.swift in Sources */,
 				0CD673802482956300D153F6 /* EmailedInteractor.swift in Sources */,
 				0CD673E62483954B00D153F6 /* FavoriteBuilder.swift in Sources */,
-				0CD673862482956300D153F6 /* SharedProtocols.swift in Sources */,
 				0CD6735624828EF800D153F6 /* MainBuilder.swift in Sources */,
 				0CD6733C24828A3E00D153F6 /* UrlBuilderProtocol.swift in Sources */,
 				0CD6739F2483090300D153F6 /* Nytapp.xcdatamodeld in Sources */,
+				0CD674072483A42600D153F6 /* SharedProtocols.swift in Sources */,
 				0CD6737F2482956300D153F6 /* EmailedFlow.swift in Sources */,
-				0CD673872482956300D153F6 /* SharedInteractor.swift in Sources */,
 				0CD6737C2482956300D153F6 /* EmailedProtocols.swift in Sources */,
 				0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */,
 				0CD6733A248289E400D153F6 /* MostEmailedArticleUrl.swift in Sources */,
+				0CD674012483A42600D153F6 /* SharedFlow.swift in Sources */,
 				0CB0CF7224824500008D61E6 /* AppDelegate.swift in Sources */,
 				0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */,
 				0CD673982482B8DB00D153F6 /* UIViewController+Extensions.swift in Sources */,
 				0CD673272482621900D153F6 /* ArticleModel.swift in Sources */,
 				0CD673DD2483954B00D153F6 /* FavoriteProtocols.swift in Sources */,
-				0CD6738F2482956300D153F6 /* ViewedBuilder.swift in Sources */,
 				0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */,
 				0CD6739124829D9D00D153F6 /* EmailedTableViewDelegate.swift in Sources */,
 				0CD673352482874F00D153F6 /* MostSharedArticleRequest.swift in Sources */,
 				0CB0CF7424824500008D61E6 /* SceneDelegate.swift in Sources */,
 				0CD673DE2483954B00D153F6 /* FavoritePresenter.swift in Sources */,
+				0CD674062483A42600D153F6 /* SharedTableViewDelegate.swift in Sources */,
 				0CD673A12483091D00D153F6 /* CoreDataStack.swift in Sources */,
 				0CD673E22483954B00D153F6 /* FavoriteViewController.swift in Sources */,
 				0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */,
-				0CD673892482956300D153F6 /* ViewedProtocols.swift in Sources */,
-				0CD673822482956300D153F6 /* SharedPresenter.swift in Sources */,
-				0CD673882482956300D153F6 /* SharedBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

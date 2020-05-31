@@ -23,6 +23,9 @@ final class SharedBuilder: ModuleBuilder {
         let storyboard = UIStoryboard.init(name: "Shared", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "SharedViewController") as! SharedViewController
         
+        let tableViewDelegate = SharedTableViewDelegate(userInteraction: controller)
+        
+        controller.delegate = tableViewDelegate
         controller.interactor = interactor
         
         presenter.view = controller

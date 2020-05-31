@@ -1,5 +1,5 @@
 //
-//  FavoriteCell.swift
+//  SharedCell.swift
 //  Nytapp
 //
 //  Created by oleg on 05.01.2020.
@@ -9,30 +9,43 @@
 import UIKit
 import Alamofire
 
-final class FavoriteCell: UITableViewCell {
+final class SharedCell: UITableViewCell {
     
     // MARK: - Public Properties
     static let cellHeight: CGFloat = 100
-    static let cellIdentifier: String = "FavoriteCell"
-    
+    static let cellIdentifier: String = "SharedCell"
+    weak var delegate: SharedInteractionProtocol?
     
     // MARK: - Private Properties
+    private var isChecked: Bool = false {
+        didSet {
+            if isChecked == true {
+                favoriteImage.isHidden = true
+            } else {
+                favoriteImage.image = UIImage(systemName: "star")
+            }
+        }
+    }
     private var model: ArticleModel?
-    
     
     // MARK: - Outlets
     @IBOutlet private weak var title: UILabel!
     @IBOutlet private weak var abstract: UILabel!
     @IBOutlet private weak var articlePreview: UIImageView!
+    @IBOutlet private weak var favoriteImage: UIImageView!
     
-    
-    // MARK: - Lifecycles
+    // MARK: Lifecycles
     override func awakeFromNib() {
         super.awakeFromNib()
         
         selectionStyle = .none
         articlePreview.layer.masksToBounds = true
         articlePreview.layer.cornerRadius = 3
+        
+        favoriteImage.image = UIImage(systemName: "star")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(buttonClicked(sender:)))
+        favoriteImage.addGestureRecognizer(tapGesture)
+        favoriteImage.isUserInteractionEnabled = true
     }
     
     override func prepareForReuse() {
@@ -43,11 +56,18 @@ final class FavoriteCell: UITableViewCell {
         abstract.text = nil
     }
     
+    @objc func buttonClicked(sender: UIButton) {
+        isChecked = !isChecked
+        if let model = self.model {
+            delegate?.addToFavorite(model: model)
+        }
+    }
+    
 }
 
 
 // MARK: - Extensions
-extension FavoriteCell {
+extension SharedCell {
     
     func fill(model: ArticlePresentationModel) {
         self.model = model.articleModel

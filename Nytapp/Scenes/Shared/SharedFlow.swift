@@ -10,5 +10,37 @@ import Foundation
 
 enum Shared {
     
+    enum Fetch {
+        
+        struct Request {
+            var days: Int
+        }
+        
+        struct Response {
+            let result: Result<[ArticleModel], CommonError>
+        }
+        
+        struct ViewModel {
+            let models: [ArticlePresentationModel]
+            let error: CommonError?
+        }
 
+    }
+    
+    enum Save {
+        
+        struct Request {
+            var article: ArticleModel
+        }
+        
+        struct Response {
+            let result: Result<Void, CommonError>
+        }
+        
+        struct ViewModel {
+
+        }
+
+    }
+    
 }
