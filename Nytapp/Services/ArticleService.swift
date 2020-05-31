@@ -82,6 +82,21 @@ extension ArticleService: ArticleServiceProtocol {
     }
     
     func saveArticleEntity(article: ArticleModel, completion: @escaping (Result<Void, CommonError>) -> Void) {
+        let fetchRequest: NSFetchRequest<ArticleEntity> = ArticleEntity.fetchRequest()
+        let predicate = NSPredicate(format: "id == %@", "\(article.id)")
+        fetchRequest.predicate = predicate
+        
+        var entities: [ArticleEntity] = []
+        do {
+            entities = try coreDataStack.persistentContainer.viewContext.fetch(fetchRequest)
+        } catch {
+            completion(.failure(CommonError.invalidDbResult))
+        }
+        
+        guard entities.first == nil else {
+            return completion(.success(()))
+        }
+        
         let entity = ArticleEntity(context: CoreDataStack.shared.persistentContainer.viewContext)
         entity.id = "\(article.id)"
         entity.url = article.url
