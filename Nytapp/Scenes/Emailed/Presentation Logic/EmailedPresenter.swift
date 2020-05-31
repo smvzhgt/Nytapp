@@ -36,4 +36,9 @@ extension EmailedPresenter: EmailedPresenterProtocol {
         }
     }
     
+    func presentSaveArticleToDb(response: Emailed.Save.Response) {
+        let viewModel = Emailed.Save.ViewModel()
+        self.view.displaySaveArticleToDb(viewModel: viewModel)
+    }
+    
 }

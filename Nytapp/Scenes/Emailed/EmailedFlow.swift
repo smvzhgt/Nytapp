@@ -27,4 +27,20 @@ enum Emailed {
 
     }
     
+    enum Save {
+        
+        struct Request {
+            var article: ArticleModel
+        }
+        
+        struct Response {
+            let result: Result<Void, CommonError>
+        }
+        
+        struct ViewModel {
+
+        }
+
+    }
+    
 }

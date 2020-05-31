@@ -40,4 +40,12 @@ extension EmailedInteractor: EmailedInteractorProtocol {
         }
     }
     
+    func saveArticleToDb(request: Emailed.Save.Request) {
+        service.saveArticleEntity(article: request.article) { [weak self] (result: Result<Void, CommonError>) in
+            guard let `self` = self else { return }
+            let response = Emailed.Save.Response(result: result)
+            self.presenter.presentSaveArticleToDb(response: response)
+        }
+    }
+    
 }

@@ -54,6 +54,10 @@ extension EmailedViewController: EmailedViewProtocol {
             tableView.reloadData()
         }
     }
+    
+    func displaySaveArticleToDb(viewModel: Emailed.Save.ViewModel) {
+        
+    }
 }
 
 extension EmailedViewController: EmailedInteractionProtocol {
@@ -68,7 +72,8 @@ extension EmailedViewController: EmailedInteractionProtocol {
     }
     
     func addToFavorite(model: ArticleModel) {
-        // todo
+        let request = Emailed.Save.Request(article: model)
+        interactor.saveArticleToDb(request: request)
     }
     
 }
