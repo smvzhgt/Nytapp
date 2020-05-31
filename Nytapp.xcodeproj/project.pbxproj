@@ -67,6 +67,16 @@
 		0CD674072483A42600D153F6 /* SharedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FB2483A42600D153F6 /* SharedProtocols.swift */; };
 		0CD674082483A42600D153F6 /* SharedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FD2483A42600D153F6 /* SharedInteractor.swift */; };
 		0CD674092483A42600D153F6 /* SharedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673FF2483A42600D153F6 /* SharedBuilder.swift */; };
+		0CD6741A2483AEA000D153F6 /* ViewedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6740B2483AEA000D153F6 /* ViewedProtocols.swift */; };
+		0CD6741B2483AEA000D153F6 /* ViewedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6740D2483AEA000D153F6 /* ViewedPresenter.swift */; };
+		0CD6741C2483AEA000D153F6 /* ViewedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6740F2483AEA000D153F6 /* ViewedTableViewDelegate.swift */; };
+		0CD6741D2483AEA000D153F6 /* ViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674102483AEA000D153F6 /* ViewedViewController.swift */; };
+		0CD6741E2483AEA000D153F6 /* ViewedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674122483AEA000D153F6 /* ViewedCell.swift */; };
+		0CD6741F2483AEA000D153F6 /* ViewedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD674132483AEA000D153F6 /* ViewedCell.xib */; };
+		0CD674202483AEA000D153F6 /* Viewed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD674142483AEA000D153F6 /* Viewed.storyboard */; };
+		0CD674212483AEA000D153F6 /* ViewedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674152483AEA000D153F6 /* ViewedFlow.swift */; };
+		0CD674222483AEA000D153F6 /* ViewedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674172483AEA000D153F6 /* ViewedInteractor.swift */; };
+		0CD674232483AEA000D153F6 /* ViewedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674192483AEA000D153F6 /* ViewedBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +141,16 @@
 		0CD673FB2483A42600D153F6 /* SharedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedProtocols.swift; sourceTree = "<group>"; };
 		0CD673FD2483A42600D153F6 /* SharedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedInteractor.swift; sourceTree = "<group>"; };
 		0CD673FF2483A42600D153F6 /* SharedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBuilder.swift; sourceTree = "<group>"; };
+		0CD6740B2483AEA000D153F6 /* ViewedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedProtocols.swift; sourceTree = "<group>"; };
+		0CD6740D2483AEA000D153F6 /* ViewedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedPresenter.swift; sourceTree = "<group>"; };
+		0CD6740F2483AEA000D153F6 /* ViewedTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedTableViewDelegate.swift; sourceTree = "<group>"; };
+		0CD674102483AEA000D153F6 /* ViewedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedViewController.swift; sourceTree = "<group>"; };
+		0CD674122483AEA000D153F6 /* ViewedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedCell.swift; sourceTree = "<group>"; };
+		0CD674132483AEA000D153F6 /* ViewedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewedCell.xib; sourceTree = "<group>"; };
+		0CD674142483AEA000D153F6 /* Viewed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Viewed.storyboard; sourceTree = "<group>"; };
+		0CD674152483AEA000D153F6 /* ViewedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedFlow.swift; sourceTree = "<group>"; };
+		0CD674172483AEA000D153F6 /* ViewedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedInteractor.swift; sourceTree = "<group>"; };
+		0CD674192483AEA000D153F6 /* ViewedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +245,7 @@
 		0CD672FB24824EC900D153F6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0CD6740A2483AEA000D153F6 /* Viewed */,
 				0CD673F02483A42600D153F6 /* Shared */,
 				0CD673CD2483954B00D153F6 /* Favorite */,
 				0CD673572482956300D153F6 /* Emailed */,
@@ -500,6 +521,63 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		0CD6740A2483AEA000D153F6 /* Viewed */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674152483AEA000D153F6 /* ViewedFlow.swift */,
+				0CD6740B2483AEA000D153F6 /* ViewedProtocols.swift */,
+				0CD674182483AEA000D153F6 /* Builder */,
+				0CD674162483AEA000D153F6 /* Business Logic */,
+				0CD6740C2483AEA000D153F6 /* Presentation Logic */,
+				0CD6740E2483AEA000D153F6 /* View */,
+			);
+			path = Viewed;
+			sourceTree = "<group>";
+		};
+		0CD6740C2483AEA000D153F6 /* Presentation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD6740D2483AEA000D153F6 /* ViewedPresenter.swift */,
+			);
+			path = "Presentation Logic";
+			sourceTree = "<group>";
+		};
+		0CD6740E2483AEA000D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674112483AEA000D153F6 /* Cell */,
+				0CD6740F2483AEA000D153F6 /* ViewedTableViewDelegate.swift */,
+				0CD674102483AEA000D153F6 /* ViewedViewController.swift */,
+				0CD674142483AEA000D153F6 /* Viewed.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CD674112483AEA000D153F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674122483AEA000D153F6 /* ViewedCell.swift */,
+				0CD674132483AEA000D153F6 /* ViewedCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CD674162483AEA000D153F6 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674172483AEA000D153F6 /* ViewedInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		0CD674182483AEA000D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674192483AEA000D153F6 /* ViewedBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -570,9 +648,11 @@
 				0CB0CF7B24824502008D61E6 /* Assets.xcassets in Resources */,
 				0CD673EF2483973900D153F6 /* FavoriteCell.xib in Resources */,
 				0CD674052483A42600D153F6 /* Shared.storyboard in Resources */,
+				0CD674202483AEA000D153F6 /* Viewed.storyboard in Resources */,
 				0CD673952482A35A00D153F6 /* ArticleCell.xib in Resources */,
 				0CD674032483A42600D153F6 /* SharedCell.xib in Resources */,
 				0CB0CF7924824500008D61E6 /* Main.storyboard in Resources */,
+				0CD6741F2483AEA000D153F6 /* ViewedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,20 +670,25 @@
 				0CD6739A2482C03400D153F6 /* MainTabBarViewController.swift in Sources */,
 				0CD673CB2483127800D153F6 /* ArticleEntity+CoreDataClass.swift in Sources */,
 				0CD673E12483954B00D153F6 /* FavoriteTableViewDelegate.swift in Sources */,
+				0CD6741A2483AEA000D153F6 /* ViewedProtocols.swift in Sources */,
+				0CD6741B2483AEA000D153F6 /* ViewedPresenter.swift in Sources */,
 				0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */,
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
 				0CD6737B2482956300D153F6 /* EmailedPresenter.swift in Sources */,
 				0CD674082483A42600D153F6 /* SharedInteractor.swift in Sources */,
 				0CD674042483A42600D153F6 /* SharedCell.swift in Sources */,
 				0CD673962482A35A00D153F6 /* ArticleCell.swift in Sources */,
+				0CD674232483AEA000D153F6 /* ViewedBuilder.swift in Sources */,
 				0CD673E52483954B00D153F6 /* FavoriteInteractor.swift in Sources */,
 				0CD673EE2483973900D153F6 /* FavoriteCell.swift in Sources */,
+				0CD6741C2483AEA000D153F6 /* ViewedTableViewDelegate.swift in Sources */,
 				0CD673DF2483954B00D153F6 /* FavoriteFlow.swift in Sources */,
 				0CD6732124825F2700D153F6 /* MostEmailedRequest.swift in Sources */,
 				0CD6731E24825EE000D153F6 /* Endpoint.swift in Sources */,
 				0CD674022483A42600D153F6 /* SharedViewController.swift in Sources */,
 				0CD673232482604100D153F6 /* NetworkUtil.swift in Sources */,
 				0CD673332482851800D153F6 /* ArticleService.swift in Sources */,
+				0CD674222483AEA000D153F6 /* ViewedInteractor.swift in Sources */,
 				0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */,
 				0CD674092483A42600D153F6 /* SharedBuilder.swift in Sources */,
 				0CD6737E2482956300D153F6 /* EmailedViewController.swift in Sources */,
@@ -623,6 +708,7 @@
 				0CD6733E24828A8A00D153F6 /* MostSharedArticleUrl.swift in Sources */,
 				0CD673982482B8DB00D153F6 /* UIViewController+Extensions.swift in Sources */,
 				0CD673272482621900D153F6 /* ArticleModel.swift in Sources */,
+				0CD6741E2483AEA000D153F6 /* ViewedCell.swift in Sources */,
 				0CD673DD2483954B00D153F6 /* FavoriteProtocols.swift in Sources */,
 				0CD673812482956300D153F6 /* EmailedBuilder.swift in Sources */,
 				0CD6739124829D9D00D153F6 /* EmailedTableViewDelegate.swift in Sources */,
@@ -632,7 +718,9 @@
 				0CD674062483A42600D153F6 /* SharedTableViewDelegate.swift in Sources */,
 				0CD673A12483091D00D153F6 /* CoreDataStack.swift in Sources */,
 				0CD673E22483954B00D153F6 /* FavoriteViewController.swift in Sources */,
+				0CD6741D2483AEA000D153F6 /* ViewedViewController.swift in Sources */,
 				0CD6734224828B7000D153F6 /* ArticleRequest.swift in Sources */,
+				0CD674212483AEA000D153F6 /* ViewedFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
