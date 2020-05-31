@@ -77,20 +77,33 @@ final class MediaMetadataModel: Codable {
 
 
 struct ArticlePresentationModel {
+    var id: String
     var url: String
     var title: String
     var abstract: String
     var imageUrl: String?
-    var articleModel: ArticleModel
+    var articleModel: ArticleModel?
 }
 
 
 extension ArticlePresentationModel {
     init(model: ArticleModel) {
+        self.id = "\(model.id)"
         self.url = model.url
         self.title = model.title
         self.abstract = model.abstract
         self.imageUrl = model.media.first?.mediaMetadata.filter({ $0.format == "mediumThreeByTwo210" }).first?.url
         self.articleModel = model
+    }
+}
+
+
+extension ArticlePresentationModel {
+    init(entity: ArticleEntity) {
+        self.id = entity.id ?? ""
+        self.url = entity.url ?? ""
+        self.title = entity.title ?? ""
+        self.abstract = entity.abstract ?? ""
+        self.imageUrl = entity.imageUrl
     }
 }

@@ -21,5 +21,6 @@ extension ArticleEntity {
     @NSManaged public var title: String?
     @NSManaged public var abstract: String?
     @NSManaged public var imageUrl: String?
+    @NSManaged public var id: String?
 
 }

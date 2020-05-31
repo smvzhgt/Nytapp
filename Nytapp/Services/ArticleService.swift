@@ -7,22 +7,28 @@
 //
 
 import Foundation
+import CoreData
 
 protocol ArticleServiceProtocol {
     func fetchMostEmailedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void)
     func fetchMostSharedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void)
     func fetchMostViewedArticle(days: Int, completion: @escaping (Result<[ArticleModel], CommonError>) -> Void)
+    func saveArticleEntity(article: ArticleModel, completion: @escaping (Result<Void, CommonError>) -> Void)
+    func fetchArticleEntities(completion: @escaping (Result<[ArticlePresentationModel], CommonError>) -> Void)
+    
 }
 
 final class ArticleService {
     
     // MARK: - Private Properties
     private let executor: RequestExecutorProtocol
-    
+    private let coreDataStack: CoreDataStack
     
     // MARK: - Initializers
-    init(executor: RequestExecutorProtocol = RequestExecutor()) {
+    init(executor: RequestExecutorProtocol = RequestExecutor(),
+         coreDataStack: CoreDataStack = CoreDataStack.shared) {
         self.executor = executor
+        self.coreDataStack = coreDataStack
     }
     
 }
@@ -72,6 +78,31 @@ extension ArticleService: ArticleServiceProtocol {
             case (.none, .none), (.some(_), .some(_)):
                 completion(.failure(CommonError.invalidData))
             }
+        }
+    }
+    
+    func saveArticleEntity(article: ArticleModel, completion: @escaping (Result<Void, CommonError>) -> Void) {
+        let entity = ArticleEntity(context: CoreDataStack.shared.persistentContainer.viewContext)
+        entity.id = "\(article.id)"
+        entity.url = article.url
+        entity.title = article.title
+        entity.abstract = article.abstract
+        entity.imageUrl = article.media.first?.mediaMetadata.filter({ $0.format == "mediumThreeByTwo210" }).first?.url
+        coreDataStack.saveContext()
+        completion(.success(()))
+    }
+    
+    func fetchArticleEntities(completion: @escaping (Result<[ArticlePresentationModel], CommonError>) -> Void) {
+        let fetchRequest: NSFetchRequest<ArticleEntity> = ArticleEntity.fetchRequest()
+        var entities: [ArticleEntity]
+        do {
+            entities = try coreDataStack.persistentContainer.viewContext.fetch(fetchRequest)
+            let articles = entities.map({ entity in
+                return ArticlePresentationModel(entity: entity)
+            })
+            completion(.success(articles))
+        } catch {
+            completion(.failure(CommonError.invalidDbResult))
         }
     }
     

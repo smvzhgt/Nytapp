@@ -10,6 +10,8 @@ import Foundation
 
 enum CommonError: Error {
     
+    case invalidDbResult
+    case errorSaveDataToDb
     case decodingDataError
     case networkError(error: Error)
     case invalidData
@@ -20,8 +22,12 @@ enum CommonError: Error {
             return "Decoding Data Error"
         case let .networkError(error):
             return "Error:\n\(error.localizedDescription)"
-        case let .invalidData:
+        case .invalidData:
             return "Server error"
+        case .invalidDbResult:
+            return "Invalid DB result"
+        case .errorSaveDataToDb:
+            return "Saving daata error to DB"
         }
     }
 }

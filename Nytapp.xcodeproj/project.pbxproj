@@ -59,8 +59,8 @@
 		0CD6739A2482C03400D153F6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673992482C03400D153F6 /* MainTabBarViewController.swift */; };
 		0CD6739F2483090300D153F6 /* Nytapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6739D2483090300D153F6 /* Nytapp.xcdatamodeld */; };
 		0CD673A12483091D00D153F6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673A02483091D00D153F6 /* CoreDataStack.swift */; };
-		0CD673A424830B8600D153F6 /* ArticleEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673A224830B8600D153F6 /* ArticleEntity+CoreDataClass.swift */; };
-		0CD673A524830B8600D153F6 /* ArticleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673A324830B8600D153F6 /* ArticleEntity+CoreDataProperties.swift */; };
+		0CD673CB2483127800D153F6 /* ArticleEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673C92483127800D153F6 /* ArticleEntity+CoreDataClass.swift */; };
+		0CD673CC2483127800D153F6 /* ArticleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD673CA2483127800D153F6 /* ArticleEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,8 +117,8 @@
 		0CD673992482C03400D153F6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		0CD6739E2483090300D153F6 /* Nytapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nytapp.xcdatamodel; sourceTree = "<group>"; };
 		0CD673A02483091D00D153F6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		0CD673A224830B8600D153F6 /* ArticleEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0CD673A324830B8600D153F6 /* ArticleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CD673C92483127800D153F6 /* ArticleEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CD673CA2483127800D153F6 /* ArticleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,8 +460,8 @@
 		0CD6739C248308A600D153F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0CD673A224830B8600D153F6 /* ArticleEntity+CoreDataClass.swift */,
-				0CD673A324830B8600D153F6 /* ArticleEntity+CoreDataProperties.swift */,
+				0CD673C92483127800D153F6 /* ArticleEntity+CoreDataClass.swift */,
+				0CD673CA2483127800D153F6 /* ArticleEntity+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -548,11 +548,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CD6738B2482956300D153F6 /* ViewedViewController.swift in Sources */,
-				0CD673A524830B8600D153F6 /* ArticleEntity+CoreDataProperties.swift in Sources */,
+				0CD673CC2483127800D153F6 /* ArticleEntity+CoreDataProperties.swift in Sources */,
 				0CD6734024828AC100D153F6 /* MostViewedArticleUrl.swift in Sources */,
 				0CB0CF7624824500008D61E6 /* ViewController.swift in Sources */,
 				0CD6739A2482C03400D153F6 /* MainTabBarViewController.swift in Sources */,
-				0CD673A424830B8600D153F6 /* ArticleEntity+CoreDataClass.swift in Sources */,
+				0CD673CB2483127800D153F6 /* ArticleEntity+CoreDataClass.swift in Sources */,
 				0CD6738D2482956300D153F6 /* ViewedFlow.swift in Sources */,
 				0CD673372482888800D153F6 /* MostViewedArticlesRequest.swift in Sources */,
 				0CD6732B2482719800D153F6 /* CommonError.swift in Sources */,
