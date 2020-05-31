@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EmailedViewController: UIViewController {
+final class EmailedViewController: BaseViewController {
     
     // MARK: - Public Properties
     var interactor: EmailedInteractorProtocol!
@@ -37,7 +37,8 @@ final class EmailedViewController: UIViewController {
     }
     
     private func fetchUsers() {
-        let request = Emailed.Fetch.Request(days: 1)
+        showLoading()
+        let request = Emailed.Fetch.Request(days: 30)
         interactor.fetchArticles(request: request)
     }
     
@@ -47,6 +48,7 @@ final class EmailedViewController: UIViewController {
 // MARK: - Extensions
 extension EmailedViewController: EmailedViewProtocol {
     func displayFetchArticles(viewModel: Emailed.Fetch.ViewModel) {
+        hideLoading()
         if let error = viewModel.error {
             showWarningDialog(message: error.localizedDescription)
         } else {

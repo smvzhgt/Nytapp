@@ -57,8 +57,7 @@ class MainTabBarViewController: UITabBarController {
         favoriteItem.title = "Favorite"
         favoriteItem.image = UIImage(systemName: "star")
         favoriteViewedViewController.tabBarItem = favoriteItem
-        
-        self.selectedIndex = 3
+
         
         self.viewControllers = [mostEmailedViewController,
                                 mostSharedViewController,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ViewedViewController: UIViewController {
+final class ViewedViewController: BaseViewController {
     
     // MARK: - Public Properties
     var interactor: ViewedInteractorProtocol!
@@ -37,7 +37,8 @@ final class ViewedViewController: UIViewController {
     }
     
     private func fetchUsers() {
-        let request = Viewed.Fetch.Request(days: 1)
+        showLoading()
+        let request = Viewed.Fetch.Request(days: 30)
         interactor.fetchArticles(request: request)
     }
     
@@ -47,6 +48,7 @@ final class ViewedViewController: UIViewController {
 // MARK: - Extensions
 extension ViewedViewController: ViewedViewProtocol {
     func displayFetchArticles(viewModel: Viewed.Fetch.ViewModel) {
+        hideLoading()
         if let error = viewModel.error {
             showWarningDialog(message: error.localizedDescription)
         } else {

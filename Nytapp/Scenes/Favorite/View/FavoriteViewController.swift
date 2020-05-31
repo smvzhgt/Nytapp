@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FavoriteViewController: UIViewController {
+final class FavoriteViewController: BaseViewController {
     
     // MARK: - Public Properties
     var interactor: FavoriteInteractorProtocol!
@@ -37,6 +37,7 @@ final class FavoriteViewController: UIViewController {
     }
     
     private func fetchUsers() {
+        showLoading()
         let request = Favorite.Fetch.Request()
         interactor.fetchFavorites(request: request)
     }
@@ -47,6 +48,7 @@ final class FavoriteViewController: UIViewController {
 // MARK: - Extensions
 extension FavoriteViewController: FavoriteViewProtocol {
     func displayFetchFavorites(viewModel: Favorite.Fetch.ViewModel) {
+        hideLoading()
         if let error = viewModel.error {
             showWarningDialog(message: error.localizedDescription)
         } else {

@@ -77,6 +77,9 @@
 		0CD674212483AEA000D153F6 /* ViewedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674152483AEA000D153F6 /* ViewedFlow.swift */; };
 		0CD674222483AEA000D153F6 /* ViewedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674172483AEA000D153F6 /* ViewedInteractor.swift */; };
 		0CD674232483AEA000D153F6 /* ViewedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674192483AEA000D153F6 /* ViewedBuilder.swift */; };
+		0CD674292483B2B400D153F6 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674262483B2B400D153F6 /* LoadingViewController.swift */; };
+		0CD6742A2483B2B400D153F6 /* LoadingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD674282483B2B400D153F6 /* LoadingBuilder.swift */; };
+		0CD6742C2483B37C00D153F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6742B2483B37C00D153F6 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +154,9 @@
 		0CD674152483AEA000D153F6 /* ViewedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedFlow.swift; sourceTree = "<group>"; };
 		0CD674172483AEA000D153F6 /* ViewedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedInteractor.swift; sourceTree = "<group>"; };
 		0CD674192483AEA000D153F6 /* ViewedBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewedBuilder.swift; sourceTree = "<group>"; };
+		0CD674262483B2B400D153F6 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0CD674282483B2B400D153F6 /* LoadingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingBuilder.swift; sourceTree = "<group>"; };
+		0CD6742B2483B37C00D153F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +244,7 @@
 			children = (
 				0CD673102482507300D153F6 /* ModuleBuilderProtocol.swift */,
 				0CD6732A2482719800D153F6 /* CommonError.swift */,
+				0CD6742B2483B37C00D153F6 /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -245,6 +252,7 @@
 		0CD672FB24824EC900D153F6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0CD674242483B2B400D153F6 /* Loading */,
 				0CD6740A2483AEA000D153F6 /* Viewed */,
 				0CD673F02483A42600D153F6 /* Shared */,
 				0CD673CD2483954B00D153F6 /* Favorite */,
@@ -578,6 +586,31 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		0CD674242483B2B400D153F6 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674252483B2B400D153F6 /* View */,
+				0CD674272483B2B400D153F6 /* Builder */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		0CD674252483B2B400D153F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674262483B2B400D153F6 /* LoadingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CD674272483B2B400D153F6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CD674282483B2B400D153F6 /* LoadingBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -690,6 +723,7 @@
 				0CD673332482851800D153F6 /* ArticleService.swift in Sources */,
 				0CD674222483AEA000D153F6 /* ViewedInteractor.swift in Sources */,
 				0CD6731C24825EC100D153F6 /* RequestProtocol.swift in Sources */,
+				0CD674292483B2B400D153F6 /* LoadingViewController.swift in Sources */,
 				0CD674092483A42600D153F6 /* SharedBuilder.swift in Sources */,
 				0CD6737E2482956300D153F6 /* EmailedViewController.swift in Sources */,
 				0CD673112482507300D153F6 /* ModuleBuilderProtocol.swift in Sources */,
@@ -698,8 +732,10 @@
 				0CD6735624828EF800D153F6 /* MainBuilder.swift in Sources */,
 				0CD6733C24828A3E00D153F6 /* UrlBuilderProtocol.swift in Sources */,
 				0CD6739F2483090300D153F6 /* Nytapp.xcdatamodeld in Sources */,
+				0CD6742A2483B2B400D153F6 /* LoadingBuilder.swift in Sources */,
 				0CD674072483A42600D153F6 /* SharedProtocols.swift in Sources */,
 				0CD6737F2482956300D153F6 /* EmailedFlow.swift in Sources */,
+				0CD6742C2483B37C00D153F6 /* BaseViewController.swift in Sources */,
 				0CD6737C2482956300D153F6 /* EmailedProtocols.swift in Sources */,
 				0CD6731A24825D7300D153F6 /* RequestExecutor.swift in Sources */,
 				0CD6733A248289E400D153F6 /* MostEmailedArticleUrl.swift in Sources */,

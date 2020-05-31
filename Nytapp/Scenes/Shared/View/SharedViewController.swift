@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SharedViewController: UIViewController {
+final class SharedViewController: BaseViewController {
     
     // MARK: - Public Properties
     var interactor: SharedInteractorProtocol!
@@ -37,7 +37,8 @@ final class SharedViewController: UIViewController {
     }
     
     private func fetchUsers() {
-        let request = Shared.Fetch.Request(days: 1)
+        showLoading()
+        let request = Shared.Fetch.Request(days: 30)
         interactor.fetchArticles(request: request)
     }
     
@@ -47,6 +48,7 @@ final class SharedViewController: UIViewController {
 // MARK: - Extensions
 extension SharedViewController: SharedViewProtocol {
     func displayFetchArticles(viewModel: Shared.Fetch.ViewModel) {
+        hideLoading()
         if let error = viewModel.error {
             showWarningDialog(message: error.localizedDescription)
         } else {
